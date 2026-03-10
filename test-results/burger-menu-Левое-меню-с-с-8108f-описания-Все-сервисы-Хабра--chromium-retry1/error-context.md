@@ -1,0 +1,972 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - link "Хабр Курсы" [ref=e9] [cursor=pointer]:
+              - /url: /education
+              - img [ref=e10]
+            - button [active] [ref=e14] [cursor=pointer]:
+              - img [ref=e15]
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - generic [ref=e19]: Все курсы
+              - button [ref=e20] [cursor=pointer]:
+                - img [ref=e21]
+            - generic [ref=e23]:
+              - generic [ref=e24]: Школы и Вузы
+              - button [ref=e25] [cursor=pointer]:
+                - img [ref=e26]
+      - generic [ref=e28]:
+        - generic [ref=e32]:
+          - heading "Выберите онлайн-обучение" [level=1] [ref=e33]:
+            - text: Выберите
+            - text: онлайн-обучение
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - generic [ref=e39]:
+                - textbox "Какое направление?" [ref=e40]
+                - button [ref=e42] [cursor=pointer]:
+                  - img [ref=e43]
+              - generic [ref=e48]:
+                - textbox "Что изучить?" [ref=e49]
+                - button [ref=e51] [cursor=pointer]:
+                  - img [ref=e52]
+              - generic [ref=e57]:
+                - textbox "Какая цель?" [ref=e58]
+                - button [ref=e60] [cursor=pointer]:
+                  - img [ref=e61]
+            - button "Найти курсы" [ref=e63] [cursor=pointer]
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - link "Баннер для Нетологии" [ref=e68] [cursor=pointer]:
+              - /url: https://thevospad.com/g/xtem2fvy7pbb6782316769bd3583e1/?ulp=https%3A%2F%2Fnetology.ru%2Fprograms%2Frukovoditel-proektov-v-oblasti-iskusstvennogo-intellekta-dpo-mfti&erid=4q7hppNAnjSeq2qut3v32z4qiYSGKsBTisXixRrS6EyCKebve
+              - img "Баннер для Нетологии" [ref=e69]
+            - link "Бесплатно 200+ курсов Картинка навыков" [ref=e71] [cursor=pointer]:
+              - /url: /courses/besplatnye
+              - generic [ref=e72]:
+                - text: Бесплатно
+                - text: 200+ курсов
+              - img "Картинка навыков" [ref=e73]
+              - img [ref=e75]
+          - generic [ref=e77]:
+            - heading "Популярные курсы" [level=2] [ref=e78]
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - button "Все" [ref=e82] [cursor=pointer]
+                - button "Программирование и IT" [ref=e84] [cursor=pointer]
+                - button "Аналитика и Data Science" [ref=e86] [cursor=pointer]
+                - button "Дизайн и контент" [ref=e88] [cursor=pointer]
+                - button "Бизнес и менеджмент" [ref=e90] [cursor=pointer]
+                - button "Маркетинг и продажи" [ref=e92] [cursor=pointer]
+                - button "Финансы и бухгалтерия" [ref=e94] [cursor=pointer]
+                - button "HR и рекрутинг" [ref=e96] [cursor=pointer]
+                - button "Хобби и творчество" [ref=e98] [cursor=pointer]
+                - button "Красота и здоровье" [ref=e100] [cursor=pointer]
+                - button "Кулинария" [ref=e102] [cursor=pointer]
+                - button "Психология" [ref=e104] [cursor=pointer]
+                - button "Саморазвитие и soft skills" [ref=e106] [cursor=pointer]
+                - button "Прикладные программы" [ref=e108] [cursor=pointer]
+                - button "Педагогика" [ref=e110] [cursor=pointer]
+                - button "Языки" [ref=e112] [cursor=pointer]
+              - button [ref=e113] [cursor=pointer]:
+                - img [ref=e114]
+            - generic [ref=e116]:
+              - generic [ref=e118]:
+                - generic [ref=e120]:
+                  - generic [ref=e123] [cursor=pointer]:
+                    - generic [ref=e125]: 7 мес
+                    - generic [ref=e126]:
+                      - generic [ref=e128]: Одна там школа
+                      - generic [ref=e129]: Научим тебя как учить сына читать без нервов
+                      - generic [ref=e130]:
+                        - generic [ref=e132]: Машинное обучение
+                        - generic [ref=e133]: "+4"
+                    - generic [ref=e134]:
+                      - generic [ref=e135]:
+                        - generic [ref=e136]: 150 000 ₽
+                        - generic [ref=e137]: "-10%"
+                      - generic [ref=e138]: 165 000 ₽
+                    - button "Далее" [ref=e139]
+                  - link [ref=e140] [cursor=pointer]:
+                    - /url: /courses/7583-nauchim-tebya-kak-uchit-syna-chitat-bez-nervov
+                  - link [ref=e141] [cursor=pointer]:
+                    - /url: https://www.gismeteo.ru/weather-abakan-4723/?page=courses
+                - generic [ref=e143]:
+                  - generic [ref=e146] [cursor=pointer]:
+                    - generic [ref=e148]: 9 мес
+                    - generic [ref=e149]:
+                      - generic [ref=e151]: accusamus consequatur
+                      - generic [ref=e152]: türkçe dil kursu
+                      - generic [ref=e155]: Турецкий язык
+                    - generic [ref=e156]:
+                      - generic [ref=e157]:
+                        - generic [ref=e158]: 128 000 ₽
+                        - generic [ref=e159]: "-6%"
+                      - generic [ref=e160]: 135 000 ₽
+                    - button "Далее" [ref=e161]
+                  - link [ref=e162] [cursor=pointer]:
+                    - /url: /courses/7581-turkce-dil-kursu
+                  - link [ref=e163] [cursor=pointer]:
+                    - /url: https://www.gismeteo.ru/weather-abakan-4723/?page=courses
+                - generic [ref=e165]:
+                  - generic [ref=e168] [cursor=pointer]:
+                    - generic [ref=e170]: 6 нед
+                    - generic [ref=e171]:
+                      - generic [ref=e172]:
+                        - img "Логотип АП МЭФИ-Астрахань" [ref=e173]
+                        - generic [ref=e174]: АП МЭФИ-Астрахань
+                      - generic [ref=e175]: Замечательный курс по академическому рисунку
+                      - generic [ref=e178]: Академический рисунок
+                    - generic [ref=e179]:
+                      - generic [ref=e180]:
+                        - generic [ref=e181]: 125 000 ₽
+                        - generic [ref=e182]: "-4%"
+                      - generic [ref=e183]: 130 000 ₽
+                    - button "Далее" [ref=e184]
+                  - link [ref=e185] [cursor=pointer]:
+                    - /url: /courses/7577-zamechatel-nyi-kurs-po-akademicheskomu-risunku
+                  - link [ref=e186] [cursor=pointer]:
+                    - /url: https://www.gismeteo.ru/weather-abakan-4723/?page=courses
+                - generic [ref=e188]:
+                  - img "Обложка курса" [ref=e189]
+                  - generic [ref=e191] [cursor=pointer]:
+                    - generic [ref=e192]:
+                      - generic [ref=e194]:
+                        - img [ref=e195]
+                        - generic [ref=e197]: "4.27"
+                      - generic [ref=e198]: 10 дней
+                    - generic [ref=e199]:
+                      - generic [ref=e201]: Школа магии
+                      - generic [ref=e202]: курс 1С бухгалтерия от школы Магии
+                      - generic [ref=e205]: 1С:Бухгалтерия
+                    - generic [ref=e206]:
+                      - generic [ref=e207]:
+                        - generic [ref=e208]: 56 000 ₽
+                        - generic [ref=e209]: "-6%"
+                      - generic [ref=e210]: 59 500 ₽
+                    - button "Далее" [ref=e211]
+                  - link [ref=e212] [cursor=pointer]:
+                    - /url: /courses/7565-kurs-1s-bukhgalteriya-ot-shkoly-magii
+                  - link [ref=e213] [cursor=pointer]:
+                    - /url: https://www.gismeteo.ru/weather-sankt-peterburg-4079/?page=courses
+                - generic [ref=e215]:
+                  - generic [ref=e218] [cursor=pointer]:
+                    - generic [ref=e219]:
+                      - generic [ref=e221]:
+                        - img [ref=e222]
+                        - generic [ref=e224]: "5.00"
+                      - generic [ref=e225]: 23 нед
+                    - generic [ref=e226]:
+                      - generic [ref=e227]:
+                        - img "Логотип Академия Яндекса" [ref=e228]
+                        - generic [ref=e229]: Академия Яндекса
+                      - generic [ref=e230]: Новый курс ни о чем для выкачки денег
+                      - generic [ref=e233]: Аналитик мобильных приложений
+                    - generic [ref=e234]:
+                      - generic [ref=e235]:
+                        - generic [ref=e236]: 230 000 ₽
+                        - generic [ref=e237]: "-8%"
+                      - generic [ref=e238]: 248 000 ₽
+                    - button "Далее" [ref=e239]
+                  - link [ref=e240] [cursor=pointer]:
+                    - /url: /courses/7561-novyi-kurs-ni-o-chem-dlya-vykachki-deneg
+                  - link [ref=e241] [cursor=pointer]:
+                    - /url: https://yandex.ru/pogoda/ru/moscow?page=courses
+                - generic [ref=e243]:
+                  - img "Обложка курса" [ref=e244]
+                  - generic [ref=e246] [cursor=pointer]:
+                    - generic [ref=e248]: 2 нед
+                    - generic [ref=e249]:
+                      - generic [ref=e250]:
+                        - img "Логотип Loftblog" [ref=e251]
+                        - generic [ref=e252]: Loftblog
+                      - generic [ref=e253]: Курс по бэк разработке
+                      - generic [ref=e256]: Backend-разработка
+                    - generic [ref=e257]:
+                      - generic [ref=e258]:
+                        - generic [ref=e259]: 11 000 ₽
+                        - generic [ref=e260]: "-9%"
+                      - generic [ref=e261]: 12 000 ₽
+                    - button "Далее" [ref=e262]
+                  - link [ref=e263] [cursor=pointer]:
+                    - /url: /courses/7557-kurs-po-b-ek-razrabotke
+                  - link [ref=e264] [cursor=pointer]:
+                    - /url: https://ya.ru/?page=courses
+                - generic [ref=e266]:
+                  - generic [ref=e269] [cursor=pointer]:
+                    - generic [ref=e270]:
+                      - generic [ref=e272]:
+                        - img [ref=e273]
+                        - generic [ref=e275]: "5.00"
+                      - generic [ref=e276]: 3 мес
+                    - generic [ref=e277]:
+                      - generic [ref=e279]: Яндекс Практикум
+                      - generic [ref=e280]: Курс тестирования
+                      - generic [ref=e283]: Высоконагруженные системы
+                    - generic [ref=e286]: Бесплатно
+                    - button "Далее" [ref=e287]
+                  - link [ref=e288] [cursor=pointer]:
+                    - /url: /courses/7549-kurs-testirovaniya
+                  - link [ref=e289] [cursor=pointer]:
+                    - /url: https://yandex.ru/pogoda/ru/casablanca?page=courses
+                - generic [ref=e291]:
+                  - generic [ref=e294] [cursor=pointer]:
+                    - generic [ref=e296]: 4 мес
+                    - generic [ref=e297]:
+                      - generic [ref=e298]:
+                        - img "Логотип Новая школа Айти" [ref=e299]
+                        - generic [ref=e300]: Новая школа Айти
+                      - generic [ref=e301]: Курс номер 3494273/лось
+                      - generic [ref=e304]: 1С разработка
+                    - generic [ref=e307]: 10 000 ₽
+                    - button "Далее" [ref=e308]
+                  - link [ref=e309] [cursor=pointer]:
+                    - /url: /courses/1541-kurs-nomer-3494273-los
+                  - link [ref=e310] [cursor=pointer]:
+                    - /url: https://music.yandex.ru/album/19706487/track/32783914?utm_source=web&utm_medium=copy_link&page=courses
+              - button [ref=e311] [cursor=pointer]:
+                - img [ref=e312]
+              - button [ref=e314] [cursor=pointer]:
+                - img [ref=e315]
+            - link "Перейти ко всем курсам" [ref=e317] [cursor=pointer]:
+              - /url: /courses
+          - generic [ref=e318]:
+            - generic [ref=e319]:
+              - generic [ref=e320]: Искусственный интеллект
+              - generic [ref=e321]: Курсы для тех, кто хочет работать эффективнее или просто меньше
+            - img "Робот ИИ" [ref=e322]
+            - link [ref=e323] [cursor=pointer]:
+              - /url: /courses/analitika/ai
+          - generic [ref=e324]:
+            - heading "Бесплатные курсы" [level=2] [ref=e325]
+            - generic [ref=e326]:
+              - generic [ref=e327]:
+                - button "Все" [ref=e329] [cursor=pointer]
+                - button "Программирование и IT" [ref=e331] [cursor=pointer]
+                - button "Аналитика и Data Science" [ref=e333] [cursor=pointer]
+                - button "Дизайн и контент" [ref=e335] [cursor=pointer]
+                - button "Бизнес и менеджмент" [ref=e337] [cursor=pointer]
+                - button "Маркетинг и продажи" [ref=e339] [cursor=pointer]
+                - button "Финансы и бухгалтерия" [ref=e341] [cursor=pointer]
+                - button "HR и рекрутинг" [ref=e343] [cursor=pointer]
+                - button "Хобби и творчество" [ref=e345] [cursor=pointer]
+                - button "Красота и здоровье" [ref=e347] [cursor=pointer]
+                - button "Кулинария" [ref=e349] [cursor=pointer]
+                - button "Психология" [ref=e351] [cursor=pointer]
+                - button "Саморазвитие и soft skills" [ref=e353] [cursor=pointer]
+                - button "Прикладные программы" [ref=e355] [cursor=pointer]
+                - button "Педагогика" [ref=e357] [cursor=pointer]
+                - button "Языки" [ref=e359] [cursor=pointer]
+              - button [ref=e360] [cursor=pointer]:
+                - img [ref=e361]
+            - generic [ref=e363]:
+              - generic [ref=e365]:
+                - generic [ref=e367]:
+                  - generic [ref=e370] [cursor=pointer]:
+                    - generic [ref=e371]:
+                      - generic [ref=e373]:
+                        - img [ref=e374]
+                        - generic [ref=e376]: "5.00"
+                      - generic [ref=e377]: 3 мес
+                    - generic [ref=e378]:
+                      - generic [ref=e380]: Яндекс Практикум
+                      - generic [ref=e381]: Курс тестирования
+                      - generic [ref=e384]: Высоконагруженные системы
+                    - generic [ref=e387]: Бесплатно
+                    - button "Далее" [ref=e388]
+                  - link [ref=e389] [cursor=pointer]:
+                    - /url: /courses/7549-kurs-testirovaniya
+                  - link [ref=e390] [cursor=pointer]:
+                    - /url: https://yandex.ru/pogoda/ru/casablanca?page=courses
+                - generic [ref=e392]:
+                  - generic [ref=e395] [cursor=pointer]:
+                    - generic [ref=e396]:
+                      - generic [ref=e398]:
+                        - img [ref=e399]
+                        - generic [ref=e401]: "4.08"
+                      - generic [ref=e402]: 6 нед
+                    - generic [ref=e403]:
+                      - generic [ref=e404]:
+                        - img "Логотип Devman" [ref=e405]
+                        - generic [ref=e406]: Devman
+                      - generic [ref=e407]: Тестовый курсец по Jee
+                      - generic [ref=e410]: .NET Core
+                    - generic [ref=e413]: Бесплатно
+                    - button "Далее" [ref=e414]
+                  - link [ref=e415] [cursor=pointer]:
+                    - /url: /courses/1452-testovyi-kursets-po-jee
+                  - link [ref=e416] [cursor=pointer]:
+                    - /url: https://staging.career.habratest.net/education_centers/123/courses/new?page=courses
+                - generic [ref=e418]:
+                  - generic [ref=e421] [cursor=pointer]:
+                    - generic [ref=e422]:
+                      - generic [ref=e424]:
+                        - img [ref=e425]
+                        - generic [ref=e427]: "4.75"
+                      - generic [ref=e428]: 9 мес
+                    - generic [ref=e429]:
+                      - generic [ref=e431]: Udemy
+                      - generic [ref=e432]: Курс по бэкенду для чайников
+                      - generic [ref=e435]: Python
+                    - generic [ref=e438]: Бесплатно
+                    - button "Далее" [ref=e439]
+                  - link [ref=e440] [cursor=pointer]:
+                    - /url: /courses/1449-kurs-po-b-ekendu-dlya-chainikov
+                  - link [ref=e441] [cursor=pointer]:
+                    - /url: https://staging.career.habratest.net/education_centers/30/courses/new?page=courses
+                - generic [ref=e443]:
+                  - generic [ref=e446] [cursor=pointer]:
+                    - generic [ref=e448]: 6 нед
+                    - generic [ref=e449]:
+                      - generic [ref=e450]:
+                        - img "Логотип Stepik" [ref=e451]
+                        - generic [ref=e452]: Stepik
+                      - generic [ref=e453]: Проверяем поле "Автор курса"
+                      - generic [ref=e454]:
+                        - generic [ref=e456]: JavaScript
+                        - generic [ref=e458]: TypeScript
+                    - generic [ref=e461]: Бесплатно
+                    - button "Далее" [ref=e462]
+                  - link [ref=e463] [cursor=pointer]:
+                    - /url: /courses/1448-proveryayem-pole-avtor-kursa
+                  - link [ref=e464] [cursor=pointer]:
+                    - /url: https://staging.career.habratest.net/education_centers/36/courses/new?page=courses
+                - generic [ref=e466]:
+                  - generic [ref=e469] [cursor=pointer]:
+                    - generic [ref=e470]:
+                      - generic [ref=e472]: Хороший программист
+                      - generic [ref=e473]: "От идеи до работающего бизнеса: создаем прибыльную компанию с нуля"
+                      - generic [ref=e474]:
+                        - generic [ref=e476]: Product-менеджмент
+                        - generic [ref=e477]: "+1"
+                    - generic [ref=e480]: Бесплатно
+                    - button "Далее" [ref=e481]
+                  - link [ref=e482] [cursor=pointer]:
+                    - /url: /courses/1405-ot-idei-do-rabotayushchego-biznesa-sozdayem-pribyl-nuyu-kompaniyu-s-nulya
+                  - link [ref=e483] [cursor=pointer]:
+                    - /url: https://lectera.com/ru/course/ot_idei_do_rabotayushchego_biznesa_sozdaem_pribylnuyu_kompaniyu_s_nulya?utm_source=marketplace&utm_medium=habrru&page=courses
+                - generic [ref=e485]:
+                  - generic [ref=e488] [cursor=pointer]:
+                    - generic [ref=e489]:
+                      - generic [ref=e490]:
+                        - img "Логотип XYZ School" [ref=e491]
+                        - generic [ref=e492]: XYZ School
+                      - generic [ref=e493]: Intro Blender
+                      - generic [ref=e494]:
+                        - generic [ref=e496]: Blender
+                        - generic [ref=e497]: "+1"
+                    - generic [ref=e500]: Бесплатно
+                    - button "Далее" [ref=e501]
+                  - link [ref=e502] [cursor=pointer]:
+                    - /url: /courses/1344-intro-blender
+                  - link [ref=e503] [cursor=pointer]:
+                    - /url: https://ad.admitad.com/g/oc7ji1r1833ea34e371f5293334d95/?ulp=https%3A%2F%2Fwww.school-xyz.com%2Fintro-blender&page=courses
+                - generic [ref=e505]:
+                  - generic [ref=e508] [cursor=pointer]:
+                    - generic [ref=e510]: 1 мес
+                    - generic [ref=e511]:
+                      - generic [ref=e512]:
+                        - img "Логотип Code Basics" [ref=e513]
+                        - generic [ref=e514]: Code Basics
+                      - generic [ref=e515]: Ruby для начинающих
+                      - generic [ref=e516]:
+                        - generic [ref=e518]: Ruby
+                        - generic [ref=e520]: Ruby on Rails
+                    - generic [ref=e523]: Бесплатно
+                    - button "Далее" [ref=e524]
+                  - link [ref=e525] [cursor=pointer]:
+                    - /url: /courses/1273-ruby-dlya-nachinayushchikh
+                  - link [ref=e526] [cursor=pointer]:
+                    - /url: https://ru.code-basics.com/languages/ruby?utm_source=habr&utm_medium=referral&utm_campaign=ruby&page=courses
+                - generic [ref=e528]:
+                  - generic [ref=e531] [cursor=pointer]:
+                    - generic [ref=e532]:
+                      - generic [ref=e533]:
+                        - img "Логотип City Business School" [ref=e534]
+                        - generic [ref=e535]: City Business School
+                      - generic [ref=e536]: 3 лучших курса по интернет-маркетингу
+                      - generic [ref=e539]: Интернет маркетинг
+                    - generic [ref=e542]: Бесплатно
+                    - button "Далее" [ref=e543]
+                  - link [ref=e544] [cursor=pointer]:
+                    - /url: /courses/1174-3-luchshikh-kursa-po-internet-marketingu
+                  - link [ref=e545] [cursor=pointer]:
+                    - /url: https://go.acstat.com/89f05176934fbf11?page=courses
+              - button [ref=e546] [cursor=pointer]:
+                - img [ref=e547]
+              - button [ref=e549] [cursor=pointer]:
+                - img [ref=e550]
+            - link "Перейти ко всем курсам" [ref=e552] [cursor=pointer]:
+              - /url: /courses/besplatnye
+          - generic [ref=e553]:
+            - heading "Отзывы об онлайн-школах" [level=2] [ref=e554]
+            - generic [ref=e555]:
+              - generic [ref=e557]:
+                - generic [ref=e559]:
+                  - generic [ref=e561]:
+                    - generic [ref=e562]:
+                      - img [ref=e563]
+                      - generic [ref=e564]:
+                        - generic [ref=e565]: Dmitry Maximov
+                        - generic [ref=e566]:
+                          - text: Пользователь
+                          - generic [ref=e567]:
+                            - text: Хабра
+                            - img [ref=e568]
+                      - generic [ref=e570]:
+                        - generic [ref=e571]:
+                          - img [ref=e572]
+                          - img [ref=e574]
+                          - img [ref=e576]
+                          - img [ref=e578]
+                          - img [ref=e580]
+                        - time [ref=e582]: август 2025
+                    - generic [ref=e583]:
+                      - link "Highload Architect" [ref=e585] [cursor=pointer]:
+                        - /url: https://ad.admitad.com/g/kxgx8g2hp03ea34e371f72de1a383e/?ulp=https%3A%2F%2Fotus.ru%2Flessons%2Farhitektor-vysokih-nagruzok%2F
+                      - generic [ref=e587]:
+                        - generic [ref=e588]: "Достоинства: Систематизированный набор знаний по проектированию высокомасштабируемых систем.Можно смотреть записи лекций в удобное время.Домашние задания необязательны, что удобно - не всегда из-за работы есть время что-то попробовать на практике."
+                        - generic [ref=e589]: "Недостатки: Можно чуть-чуть побольше практических примеров. Но это не критично, на практику есть домашки."
+                  - link [ref=e590] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/46-coursera/464-highload-architect/16227
+                - generic [ref=e592]:
+                  - generic [ref=e594]:
+                    - generic [ref=e595]:
+                      - img [ref=e596]
+                      - generic [ref=e597]:
+                        - generic [ref=e598]: Михаил Трибунский
+                        - generic [ref=e599]:
+                          - text: Пользователь
+                          - generic [ref=e600]:
+                            - text: Хабра
+                            - img [ref=e601]
+                      - generic [ref=e603]:
+                        - generic [ref=e604]:
+                          - img [ref=e605]
+                          - img [ref=e607]
+                          - img [ref=e609]
+                          - img [ref=e611]
+                          - img [ref=e613]
+                        - time [ref=e615]: июнь 2025
+                    - generic [ref=e616]:
+                      - link "Data Science" [ref=e618] [cursor=pointer]:
+                        - /url: https://compscicenter.ru/syllabus/on-campus/ds/
+                      - generic [ref=e619]:
+                        - generic [ref=e620]:
+                          - generic [ref=e621]: "Достоинства: Наличие практик в JetBrains и Yandex – благодаря одной такой нашел свою первую работу в сфере анализа данных.Всё по делу, ничего лишнего. В процессе обучения не возникало мысли \"а зачем мне это надо\"? Толковые преподаватели, душевные кураторы."
+                          - generic [ref=e622]: "Комментарий: Ныне это Школа анализа данных Яндекса: https://shad.yandex.ru/Обучение требует 30+ часов в неделю на протяжении 2 лет. Совмещать с полной занятостью можно, но сложно - времени на другие активности практически не останется."
+                        - button "Читать полностью" [ref=e624] [cursor=pointer]
+                  - link [ref=e625] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/45-computer-science-center/600-data-science/15893
+                - generic [ref=e627]:
+                  - generic [ref=e629]:
+                    - generic [ref=e630]:
+                      - img [ref=e631]
+                      - generic [ref=e632]:
+                        - generic [ref=e633]: Арсений Иванов
+                        - generic [ref=e634]: Пользователь
+                      - generic [ref=e635]:
+                        - generic [ref=e636]:
+                          - img [ref=e637]
+                          - img [ref=e639]
+                          - img [ref=e641]
+                          - img [ref=e643]
+                          - img [ref=e645]
+                        - time [ref=e647]: 1 декабря
+                    - generic [ref=e648]:
+                      - link "Курс тестирования" [ref=e650] [cursor=pointer]:
+                        - /url: https://yandex.ru/pogoda/ru/casablanca
+                      - generic [ref=e653]: "Комментарий: Курс великолепен, многому меня научили, уже нашел работу!"
+                  - link [ref=e654] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/247-yandeks-praktikum/7549-kurs-testirovaniya/16655
+                - generic [ref=e656]:
+                  - generic [ref=e658]:
+                    - generic [ref=e659]:
+                      - img [ref=e660]
+                      - generic [ref=e661]:
+                        - generic [ref=e662]: Михаил
+                        - generic [ref=e663]: Пользователь
+                      - generic [ref=e664]:
+                        - generic [ref=e665]:
+                          - img [ref=e666]
+                          - img [ref=e668]
+                          - img [ref=e670]
+                          - img [ref=e672]
+                          - img [ref=e674]
+                        - time [ref=e676]: 1 декабря
+                    - generic [ref=e677]:
+                      - link "курс по питону" [ref=e679] [cursor=pointer]:
+                        - /url: https://www.gismeteo.ru/weather-alanya-3797/month/
+                      - generic [ref=e682]: "Комментарий: Курс великолепен, многому меня научили, уже нашел работу!"
+                  - link [ref=e683] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/263-ap-m-efi-astrakhan/7563-kurs-po-pitonu/16653
+                - generic [ref=e685]:
+                  - generic [ref=e687]:
+                    - generic [ref=e688]:
+                      - img [ref=e689]
+                      - generic [ref=e690]:
+                        - generic [ref=e691]: Антон Валентинкин
+                        - generic [ref=e692]: Пользователь
+                      - generic [ref=e693]:
+                        - generic [ref=e694]:
+                          - img [ref=e695]
+                          - img [ref=e697]
+                          - img [ref=e699]
+                          - img [ref=e701]
+                          - img [ref=e703]
+                        - time [ref=e705]: 14 февраля
+                    - generic [ref=e706]:
+                      - link "Новый курс ни о чем для выкачки денег" [ref=e708] [cursor=pointer]:
+                        - /url: https://yandex.ru/pogoda/ru/moscow
+                      - generic [ref=e711]: "Комментарий: действительно курс ни о чем и для выкачки денег. Со своей целью отлично справился!"
+                  - link [ref=e712] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/4-akademiya-yandeksa/7561-novyi-kurs-ni-o-chem-dlya-vykachki-deneg/16661
+                - generic [ref=e714]:
+                  - generic [ref=e716]:
+                    - generic [ref=e717]:
+                      - img [ref=e718]
+                      - generic [ref=e719]:
+                        - generic [ref=e720]: Иван Дмитриенко
+                        - generic [ref=e721]: Пользователь
+                      - generic [ref=e722]:
+                        - generic [ref=e723]:
+                          - img [ref=e724]
+                          - img [ref=e726]
+                          - img [ref=e728]
+                          - img [ref=e730]
+                          - img [ref=e732]
+                        - time [ref=e734]: 11 февраля
+                    - generic [ref=e735]:
+                      - link "Как настроить рекламу в соцсетях новичку" [ref=e737] [cursor=pointer]:
+                        - /url: https://go.acstat.com/721a0101a2f646a5
+                      - generic [ref=e740]: "Комментарий: Мне курс понравился, много полезной информации"
+                  - link [ref=e741] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/10-da-ologiya/787-kak-nastroit-reklamu-v-sotssetyakh-novichku/16663
+                - generic [ref=e743]:
+                  - generic [ref=e745]:
+                    - generic [ref=e746]:
+                      - img [ref=e747]
+                      - generic [ref=e748]:
+                        - generic [ref=e749]: Аноним
+                        - generic [ref=e750]: Пользователь
+                      - generic [ref=e751]:
+                        - generic [ref=e752]:
+                          - img [ref=e753]
+                          - img [ref=e755]
+                          - img [ref=e757]
+                          - img [ref=e759]
+                          - img [ref=e761]
+                        - time [ref=e763]: декабрь 2025
+                    - generic [ref=e764]:
+                      - link "Управление проектами, людьми и собой" [ref=e766] [cursor=pointer]:
+                        - /url: https://bureau.ru/educenter/fff/
+                      - generic [ref=e769]: "Комментарий: замечательный курс, лучшее вложение денег. тест тест"
+                  - link [ref=e770] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/50-kursy-byuro-gorbunova/738-upravleniye-proyektami-lyud-mi-i-soboi/16631
+                - generic [ref=e772]:
+                  - generic [ref=e774]:
+                    - generic [ref=e775]:
+                      - img [ref=e776]
+                      - generic [ref=e777]:
+                        - generic [ref=e778]: Марк Аркашин
+                        - generic [ref=e779]: Пользователь
+                      - generic [ref=e780]:
+                        - generic [ref=e781]:
+                          - img [ref=e782]
+                          - img [ref=e784]
+                          - img [ref=e786]
+                          - img [ref=e788]
+                          - img [ref=e790]
+                        - time [ref=e792]: декабрь 2025
+                    - generic [ref=e793]:
+                      - link "Интернет-маркетолог. Free" [ref=e795] [cursor=pointer]:
+                        - /url: https://geekbrains.ru/courses/968
+                      - generic [ref=e798]: "Комментарий: отличный курс"
+                  - link [ref=e799] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/58-geekbrains/822-internet-marketolog-free/16569
+              - button [ref=e800] [cursor=pointer]:
+                - img [ref=e801]
+              - button [ref=e803] [cursor=pointer]:
+                - img [ref=e804]
+            - link "Посмотреть все отзывы" [ref=e806] [cursor=pointer]:
+              - /url: /education_centers/otzyvy
+          - generic [ref=e807]:
+            - heading "Популярные онлайн-школы" [level=2] [ref=e808]
+            - generic [ref=e809]:
+              - generic [ref=e811]:
+                - generic [ref=e813] [cursor=pointer]:
+                  - generic [ref=e815]:
+                    - generic [ref=e816]:
+                      - generic [ref=e817]:
+                        - img [ref=e818]
+                        - generic [ref=e820]: "4.22"
+                      - generic [ref=e821]:
+                        - img [ref=e822]
+                        - generic [ref=e824]: "23"
+                    - generic [ref=e825]: Одна там школа
+                    - button "Подробнее" [ref=e826]
+                  - link [ref=e827]:
+                    - /url: /education_centers/5-odna-tam-shkola
+                - generic [ref=e829] [cursor=pointer]:
+                  - img "Обложка образовательной организации" [ref=e831]
+                  - generic [ref=e832]:
+                    - img [ref=e833]
+                    - generic [ref=e834]:
+                      - generic [ref=e835]:
+                        - img [ref=e836]
+                        - generic [ref=e838]: "3.55"
+                      - generic [ref=e839]:
+                        - img [ref=e840]
+                        - generic [ref=e842]: "30"
+                    - generic [ref=e843]: GeekBrains
+                    - button "Подробнее" [ref=e844]
+                  - link [ref=e845]:
+                    - /url: /education_centers/58-geekbrains
+                - generic [ref=e847] [cursor=pointer]:
+                  - generic [ref=e849]:
+                    - generic [ref=e850]:
+                      - generic [ref=e851]:
+                        - img [ref=e852]
+                        - generic [ref=e854]: "4.68"
+                      - generic [ref=e855]:
+                        - img [ref=e856]
+                        - generic [ref=e858]: "34"
+                    - generic [ref=e859]: Udemy
+                    - button "Подробнее" [ref=e860]
+                  - link [ref=e861]:
+                    - /url: /education_centers/30-udemy
+                - generic [ref=e863] [cursor=pointer]:
+                  - generic [ref=e865]:
+                    - img [ref=e866]
+                    - generic [ref=e867]:
+                      - generic [ref=e868]:
+                        - img [ref=e869]
+                        - generic [ref=e871]: "4.15"
+                      - generic [ref=e872]:
+                        - img [ref=e873]
+                        - generic [ref=e875]: "74"
+                    - generic [ref=e876]: Да-ология
+                    - generic [ref=e877]:
+                      - img [ref=e879]
+                      - generic [ref=e880]: "+12"
+                    - button "Подробнее" [ref=e881]
+                  - link [ref=e882]:
+                    - /url: /education_centers/10-da-ologiya
+                - generic [ref=e884] [cursor=pointer]:
+                  - generic [ref=e886]:
+                    - img [ref=e887]
+                    - generic [ref=e888]:
+                      - generic [ref=e889]:
+                        - img [ref=e890]
+                        - generic [ref=e892]: "4.21"
+                      - generic [ref=e893]:
+                        - img [ref=e894]
+                        - generic [ref=e896]: "16"
+                    - generic [ref=e897]: Skillbox
+                    - button "Подробнее" [ref=e898]
+                  - link [ref=e899]:
+                    - /url: /education_centers/36-skillbox
+                - generic [ref=e901] [cursor=pointer]:
+                  - img "Обложка образовательной организации" [ref=e903]
+                  - generic [ref=e904]:
+                    - img [ref=e905]
+                    - generic [ref=e906]:
+                      - generic [ref=e907]:
+                        - img [ref=e908]
+                        - generic [ref=e910]: "4.67"
+                      - generic [ref=e911]:
+                        - img [ref=e912]
+                        - generic [ref=e914]: "3"
+                    - generic [ref=e915]: ProductStar
+                    - button "Подробнее" [ref=e916]
+                  - link [ref=e917]:
+                    - /url: /education_centers/122-productstar
+                - generic [ref=e919] [cursor=pointer]:
+                  - generic [ref=e921]:
+                    - generic [ref=e922]:
+                      - generic [ref=e923]:
+                        - img [ref=e924]
+                        - generic [ref=e926]: "5.00"
+                      - generic [ref=e927]:
+                        - img [ref=e928]
+                        - generic [ref=e930]: "1"
+                    - generic [ref=e931]: Яндекс Практикум
+                    - generic [ref=e932]:
+                      - img [ref=e934]
+                      - generic [ref=e935]: "+3"
+                    - button "Подробнее" [ref=e936]
+                  - link [ref=e937]:
+                    - /url: /education_centers/247-yandeks-praktikum
+                - generic [ref=e939] [cursor=pointer]:
+                  - img "Обложка образовательной организации" [ref=e941]
+                  - generic [ref=e942]:
+                    - img [ref=e943]
+                    - generic [ref=e944]:
+                      - generic [ref=e945]:
+                        - img [ref=e946]
+                        - generic [ref=e948]: "4.50"
+                      - generic [ref=e949]:
+                        - img [ref=e950]
+                        - generic [ref=e952]: "1"
+                    - generic [ref=e953]: edX
+                    - button "Подробнее" [ref=e954]
+                  - link [ref=e955]:
+                    - /url: /education_centers/54-edx
+              - button [ref=e956] [cursor=pointer]:
+                - img [ref=e957]
+              - button [ref=e959] [cursor=pointer]:
+                - img [ref=e960]
+            - link "Перейти ко всем школам" [ref=e962] [cursor=pointer]:
+              - /url: /education_centers
+          - generic [ref=e963]:
+            - img "Агент H" [ref=e964]
+            - generic [ref=e965]:
+              - generic [ref=e966]: Долистали до конца?
+              - generic [ref=e967]: Предлагаем вернуться в начало, как ни в чем не бывало
+              - button "Вернуться в начало" [ref=e968] [cursor=pointer]
+          - generic [ref=e969]:
+            - heading "Промокоды и акции" [level=2] [ref=e970]
+            - generic [ref=e972]:
+              - link "Binary District Скидка 74%" [ref=e973] [cursor=pointer]:
+                - /url: /education/promocodes/32-binary-district
+                - generic [ref=e974]: Binary District
+                - generic [ref=e975]:
+                  - img [ref=e976]
+                  - text: Скидка 74%
+              - link "et Скидка 72%" [ref=e978] [cursor=pointer]:
+                - /url: /education/promocodes/365-et
+                - generic [ref=e979]: et
+                - generic [ref=e980]:
+                  - img [ref=e981]
+                  - text: Скидка 72%
+              - link "Корпоративный университет Сбербанка Скидка 95%" [ref=e983] [cursor=pointer]:
+                - /url: /education/promocodes/92-korporativnyi-universitet-sberbanka
+                - generic [ref=e984]: Корпоративный университет Сбербанка
+                - generic [ref=e985]:
+                  - img [ref=e986]
+                  - text: Скидка 95%
+              - link "Bang Bang Education Скидка 86%" [ref=e988] [cursor=pointer]:
+                - /url: /education/promocodes/33-bang-bang-education
+                - generic [ref=e989]: Bang Bang Education
+                - generic [ref=e990]:
+                  - img [ref=e991]
+                  - text: Скидка 86%
+              - link "IT-университет Digital Design Скидка 39%" [ref=e993] [cursor=pointer]:
+                - /url: /education/promocodes/88-it-universitet-digital-design
+                - generic [ref=e994]: IT-университет Digital Design
+                - generic [ref=e995]:
+                  - img [ref=e996]
+                  - text: Скидка 39%
+              - link "deserunt Скидка 26%" [ref=e998] [cursor=pointer]:
+                - /url: /education/promocodes/335-deserunt
+                - generic [ref=e999]: deserunt
+                - generic [ref=e1000]:
+                  - img [ref=e1001]
+                  - text: Скидка 26%
+              - link "Skillsetter.io Скидка 84%" [ref=e1003] [cursor=pointer]:
+                - /url: /education/promocodes/140-skillsetter-io
+                - generic [ref=e1004]: Skillsetter.io
+                - generic [ref=e1005]:
+                  - img [ref=e1006]
+                  - text: Скидка 84%
+              - link "optio ut Скидка 19%" [ref=e1008] [cursor=pointer]:
+                - /url: /education/promocodes/329-optio-ut
+                - generic [ref=e1009]: optio ut
+                - generic [ref=e1010]:
+                  - img [ref=e1011]
+                  - text: Скидка 19%
+              - link "explicabo Скидка 68%" [ref=e1013] [cursor=pointer]:
+                - /url: /education/promocodes/293-explicabo
+                - generic [ref=e1014]: explicabo
+                - generic [ref=e1015]:
+                  - img [ref=e1016]
+                  - text: Скидка 68%
+              - link "rerum eaque Скидка 41%" [ref=e1018] [cursor=pointer]:
+                - /url: /education/promocodes/285-rerum-eaque
+                - generic [ref=e1019]: rerum eaque
+                - generic [ref=e1020]:
+                  - img [ref=e1021]
+                  - text: Скидка 41%
+              - link "Skillbox Скидка 73%" [ref=e1023] [cursor=pointer]:
+                - /url: /education/promocodes/36-skillbox
+                - generic [ref=e1024]: Skillbox
+                - generic [ref=e1025]:
+                  - img [ref=e1026]
+                  - text: Скидка 73%
+              - link "teamcoding Скидка 95%" [ref=e1028] [cursor=pointer]:
+                - /url: /education/promocodes/205-teamcoding
+                - generic [ref=e1029]: teamcoding
+                - generic [ref=e1030]:
+                  - img [ref=e1031]
+                  - text: Скидка 95%
+              - link "Одна там школа Скидка 20%" [ref=e1033] [cursor=pointer]:
+                - /url: /education/promocodes/5-odna-tam-shkola
+                - generic [ref=e1034]: Одна там школа
+                - generic [ref=e1035]:
+                  - img [ref=e1036]
+                  - text: Скидка 20%
+              - link "Школа магии Скидка 7890 ₽" [ref=e1038] [cursor=pointer]:
+                - /url: /education/promocodes/765-shkola-magii
+                - generic [ref=e1039]: Школа магии
+                - generic [ref=e1040]:
+                  - img [ref=e1041]
+                  - text: Скидка 7890 ₽
+              - link "GeekBrains Скидка 1000 ₽" [ref=e1043] [cursor=pointer]:
+                - /url: /education/promocodes/58-geekbrains
+                - generic [ref=e1044]: GeekBrains
+                - generic [ref=e1045]:
+                  - img [ref=e1046]
+                  - text: Скидка 1000 ₽
+              - link "veritatis Скидка 20833065.15 $" [ref=e1048] [cursor=pointer]:
+                - /url: /education/promocodes/303-veritatis
+                - generic [ref=e1049]: veritatis
+                - generic [ref=e1050]:
+                  - img [ref=e1051]
+                  - text: Скидка 20833065.15 $
+              - link "Британская высшая школа дизайна Скидка 21072105.12 ₽" [ref=e1053] [cursor=pointer]:
+                - /url: /education/promocodes/163-britanskaya-vysshaya-shkola-dizaina
+                - generic [ref=e1054]: Британская высшая школа дизайна
+                - generic [ref=e1055]:
+                  - img [ref=e1056]
+                  - text: Скидка 21072105.12 ₽
+              - link "VFXLAB Скидка 8296531.01 ₽" [ref=e1058] [cursor=pointer]:
+                - /url: /education/promocodes/161-vfxlab
+                - generic [ref=e1059]: VFXLAB
+                - generic [ref=e1060]:
+                  - img [ref=e1061]
+                  - text: Скидка 8296531.01 ₽
+            - button "Смотреть все" [ref=e1063] [cursor=pointer]
+          - generic [ref=e1064]:
+            - heading "Популярные направления" [level=2] [ref=e1065]
+            - generic [ref=e1067]:
+              - generic [ref=e1068]:
+                - link "Программирование и IT" [ref=e1069] [cursor=pointer]:
+                  - /url: /courses/programmirovanie
+                - generic [ref=e1070]: "432"
+              - generic [ref=e1071]:
+                - link "Аналитика и Data Science" [ref=e1072] [cursor=pointer]:
+                  - /url: /courses/analitika
+                - generic [ref=e1073]: "93"
+              - generic [ref=e1074]:
+                - link "Дизайн и контент" [ref=e1075] [cursor=pointer]:
+                  - /url: /courses/dizajn
+                - generic [ref=e1076]: "84"
+              - generic [ref=e1077]:
+                - link "Бизнес и менеджмент" [ref=e1078] [cursor=pointer]:
+                  - /url: /courses/menedzhment
+                - generic [ref=e1079]: "74"
+              - generic [ref=e1080]:
+                - link "Маркетинг и продажи" [ref=e1081] [cursor=pointer]:
+                  - /url: /courses/marketing
+                - generic [ref=e1082]: "45"
+              - link "Финансы и бухгалтерия" [ref=e1084] [cursor=pointer]:
+                - /url: /courses/finansy
+              - generic [ref=e1085]:
+                - link "HR и рекрутинг" [ref=e1086] [cursor=pointer]:
+                  - /url: /courses/hr-upravlenie-personalom
+                - generic [ref=e1087]: "25"
+              - generic [ref=e1088]:
+                - link "Хобби и творчество" [ref=e1089] [cursor=pointer]:
+                  - /url: /courses/creativity-hobby
+                - generic [ref=e1090]: "1"
+              - generic [ref=e1091]:
+                - link "Красота и здоровье" [ref=e1092] [cursor=pointer]:
+                  - /url: /courses/krasota-zdorovie
+                - generic [ref=e1093]: "2"
+              - generic [ref=e1094]:
+                - link "Кулинария" [ref=e1095] [cursor=pointer]:
+                  - /url: /courses/kulinariya
+                - generic [ref=e1096]: "1"
+              - generic [ref=e1097]:
+                - link "Психология" [ref=e1098] [cursor=pointer]:
+                  - /url: /courses/psihologiya
+                - generic [ref=e1099]: "1"
+              - link "Саморазвитие и soft skills" [ref=e1101] [cursor=pointer]:
+                - /url: /courses/samorazvitie
+              - generic [ref=e1102]:
+                - link "Прикладные программы" [ref=e1103] [cursor=pointer]:
+                  - /url: /courses/microsoft-office
+                - generic [ref=e1104]: "3"
+              - generic [ref=e1105]:
+                - link "Педагогика" [ref=e1106] [cursor=pointer]:
+                  - /url: /courses/pedagogika
+                - generic [ref=e1107]: "1"
+              - generic [ref=e1108]:
+                - link "Языки" [ref=e1109] [cursor=pointer]:
+                  - /url: /courses/inostrannye-yazyki
+                - generic [ref=e1110]: "2"
+            - button "Смотреть все" [ref=e1111] [cursor=pointer]
+    - contentinfo [ref=e1112]:
+      - generic [ref=e1114]:
+        - list [ref=e1115]:
+          - listitem [ref=e1116]:
+            - img [ref=e1118]
+            - link "Хабр" [ref=e1120] [cursor=pointer]:
+              - /url: https://habr.com/?utm_source=habr_career&amp;utm_medium=habr_top_panel
+          - listitem [ref=e1121]:
+            - img [ref=e1123]
+            - link "Q&A" [ref=e1125] [cursor=pointer]:
+              - /url: https://qna.habr.com/?utm_source=habr_career&amp;utm_medium=habr_top_panel
+          - listitem [ref=e1126]:
+            - img [ref=e1128]
+            - link "Карьера" [ref=e1130] [cursor=pointer]:
+              - /url: https://career.habr.com/
+          - listitem [ref=e1131]:
+            - img [ref=e1133]
+            - link "Курсы" [ref=e1135] [cursor=pointer]:
+              - /url: https://career.habr.com/education
+        - list [ref=e1136]:
+          - listitem [ref=e1137]:
+            - link "Список онлайн-школ" [ref=e1138] [cursor=pointer]:
+              - /url: /education_centers
+          - listitem [ref=e1139]:
+            - link "Рейтинг онлайн-школ" [ref=e1140] [cursor=pointer]:
+              - /url: /education_centers/rating
+          - listitem [ref=e1141]:
+            - link "Промокоды и скидки" [ref=e1142] [cursor=pointer]:
+              - /url: /education/promocodes
+          - listitem [ref=e1143]:
+            - link "Соглашение с пользователем" [ref=e1144] [cursor=pointer]:
+              - /url: /info/legal/agreement
+        - list [ref=e1145]:
+          - listitem [ref=e1146]:
+            - link "Правила оказания услуг" [ref=e1147] [cursor=pointer]:
+              - /url: /info/legal/rules
+          - listitem [ref=e1148]:
+            - link "Карта сайта" [ref=e1149] [cursor=pointer]:
+              - /url: /sitemap
+        - generic [ref=e1150]:
+          - list [ref=e1151]:
+            - listitem [ref=e1152]:
+              - link "Мы в Twitter" [ref=e1153] [cursor=pointer]:
+                - /url: https://twitter.com/habr_career
+                - img [ref=e1154]
+            - listitem [ref=e1156]:
+              - link "Мы в Facebook" [ref=e1157] [cursor=pointer]:
+                - /url: https://www.facebook.com/career.habr
+                - img [ref=e1158]
+            - listitem [ref=e1160]:
+              - link "Мы во Вконтакте" [ref=e1161] [cursor=pointer]:
+                - /url: https://vk.com/habr_career
+                - img [ref=e1162]
+            - listitem [ref=e1164]:
+              - link "Мы в Instagram" [ref=e1165] [cursor=pointer]:
+                - /url: https://www.instagram.com/habr_career/
+                - img [ref=e1166]
+            - listitem [ref=e1168]:
+              - link "Мы в Telegram" [ref=e1169] [cursor=pointer]:
+                - /url: https://telegram.me/habr_career
+                - img [ref=e1170]
+            - listitem [ref=e1172]:
+              - link "Наш телеграм-бот" [ref=e1173] [cursor=pointer]:
+                - /url: https://t.me/habrcareer_bot
+                - img [ref=e1174]
+          - link "© Habr" [ref=e1176] [cursor=pointer]:
+            - /url: https://company.habr.com/
+  - iframe
+```
