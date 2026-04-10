@@ -4,8 +4,6 @@
  */
 const config = {
   testDir: "./tests",
-  snapshotPathTemplate:
-    "{snapshotDir}/{testFileDir}/{testFileName}-snapshots/{arg}{-snapshotSuffix}{ext}",
   timeout: 90 * 1000,
   retries: 1,
   workers: 4,

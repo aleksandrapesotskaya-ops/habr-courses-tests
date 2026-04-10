@@ -1,0 +1,860 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - link "Хабр Курсы" [ref=e9] [cursor=pointer]:
+              - /url: /education
+              - img [ref=e10]
+            - button [ref=e14] [cursor=pointer]:
+              - img [ref=e15]
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - generic [ref=e19] [cursor=pointer]: Все курсы
+              - button [ref=e20] [cursor=pointer]:
+                - img [ref=e21]
+            - generic [ref=e23]:
+              - generic [ref=e24] [cursor=pointer]: Школы и Вузы
+              - button [ref=e25] [cursor=pointer]:
+                - img [ref=e26]
+      - generic [ref=e28]:
+        - generic [ref=e32]:
+          - heading "Выберите онлайн-обучение" [level=1] [ref=e33]:
+            - text: Выберите
+            - text: онлайн-обучение
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - link "Взрослым" [ref=e36] [cursor=pointer]:
+                - /url: /education
+              - link "Детям" [ref=e37] [cursor=pointer]:
+                - /url: /education#school
+            - link "Промокоды" [ref=e39] [cursor=pointer]:
+              - /url: /education/promocodes
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e45]:
+                - textbox "Какое направление?" [ref=e46]
+                - button [ref=e48] [cursor=pointer]:
+                  - img [ref=e49]
+              - generic [ref=e54]:
+                - textbox "Что изучить?" [ref=e55]
+                - button [ref=e57] [cursor=pointer]:
+                  - img [ref=e58]
+              - generic [ref=e63]:
+                - textbox "Какая цель?" [ref=e64]
+                - button [ref=e66] [cursor=pointer]:
+                  - img [ref=e67]
+            - button "Найти курсы" [ref=e69] [cursor=pointer]
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - link "Баннер для Нетологии" [ref=e74] [cursor=pointer]:
+              - /url: https://thevospad.com/g/xtem2fvy7pbb6782316769bd3583e1/?ulp=https%3A%2F%2Fnetology.ru%2Fprograms%2Frazrabotchik-na-python-s-mfti&erid=4q7hppNAnjSeq2qut3v32z4qiYSGKsBTisXixRrS6EyCMAwRe
+              - img "Баннер для Нетологии" [ref=e75]
+            - link "Бесплатно 200+ курсов Картинка навыков" [ref=e77] [cursor=pointer]:
+              - /url: /courses/besplatnye
+              - generic [ref=e78]:
+                - text: Бесплатно
+                - text: 200+ курсов
+              - img "Картинка навыков" [ref=e79]
+              - img [ref=e81]
+          - generic [ref=e83]:
+            - heading "Популярные курсы" [level=2] [ref=e84]
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - button "Все" [ref=e88] [cursor=pointer]
+                - button "Программирование и IT" [ref=e90] [cursor=pointer]
+                - button "Аналитика и Data Science" [ref=e92] [cursor=pointer]
+                - button "Дизайн и контент" [ref=e94] [cursor=pointer]
+                - button "Бизнес и менеджмент" [ref=e96] [cursor=pointer]
+                - button "Маркетинг и продажи" [ref=e98] [cursor=pointer]
+                - button "Финансы и бухгалтерия" [ref=e100] [cursor=pointer]
+                - button "HR и рекрутинг" [ref=e102] [cursor=pointer]
+                - button "Прикладные программы" [ref=e104] [cursor=pointer]
+                - button "Саморазвитие и soft skills" [ref=e106] [cursor=pointer]
+                - button "Хобби и творчество" [ref=e108] [cursor=pointer]
+              - button [ref=e109] [cursor=pointer]:
+                - img [ref=e110]
+            - generic [ref=e112]:
+              - generic [ref=e114]:
+                - generic [ref=e116]:
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e121]: 9 час
+                    - generic [ref=e122]:
+                      - generic [ref=e124]: Лаборатория Atlas финансов
+                      - generic [ref=e125]: Интенсив "1С:Бухгалтерия" для цели "Освоить с нуля" — с практикой на реальных задачах
+                      - generic [ref=e128]: 1С:Бухгалтерия
+                    - generic [ref=e131]: Бесплатно
+                    - button "Далее" [ref=e132]
+                  - link [ref=e133] [cursor=pointer]:
+                    - /url: /courses/179-intensiv-1s-buhgalteriya-dlya-celi-osvoit-s-nulya-s-praktikoy-na-realnyh-zadachah
+                  - link [ref=e134] [cursor=pointer]:
+                    - /url: http://mironov.ru/?page=courses
+                - generic [ref=e136]:
+                  - generic [ref=e139] [cursor=pointer]:
+                    - generic [ref=e140]:
+                      - generic [ref=e142]:
+                        - img [ref=e143]
+                        - generic [ref=e145]: "4.00"
+                      - generic [ref=e146]: 5 мес
+                    - generic [ref=e147]:
+                      - generic [ref=e149]: Институт Pioneer HR и рекрутинга
+                      - generic [ref=e150]: "Бизнес и менеджмент для карьеры: Найти хобби — с наставником"
+                      - generic [ref=e153]: .NET
+                    - generic [ref=e156]: 293 898 ₽
+                    - button "Далее" [ref=e157]
+                  - link [ref=e158] [cursor=pointer]:
+                    - /url: /courses/113-biznes-i-menedzhment-dlya-karery-nayti-hobbi-s-nastavnikom
+                  - link [ref=e159] [cursor=pointer]:
+                    - /url: http://www.makarova.ru/qui-vel-qui-qui-et-possimus?page=courses
+                - generic [ref=e161]:
+                  - generic [ref=e164] [cursor=pointer]:
+                    - generic [ref=e166]: 7 час
+                    - generic [ref=e167]:
+                      - generic [ref=e169]: Институт Delta soft skills
+                      - generic [ref=e170]: "Профессия: .NET MAUI (Бизнес и менеджмент) — с карьерным треком"
+                      - generic [ref=e173]: .NET MAUI
+                    - generic [ref=e174]:
+                      - generic [ref=e175]:
+                        - generic [ref=e176]: от 1 315 ₽/мес
+                        - generic [ref=e177]: "-84%"
+                      - generic [ref=e178]: или сразу 6 617 ₽
+                    - button "Далее" [ref=e179]
+                  - link [ref=e180] [cursor=pointer]:
+                    - /url: /courses/27-professiya-net-maui-biznes-i-menedzhment-s-karernym-trekom
+                  - link [ref=e181] [cursor=pointer]:
+                    - /url: http://avdeev.ru/doloremque-optio-ratione-quos.html?page=courses
+                - generic [ref=e183]:
+                  - generic [ref=e186] [cursor=pointer]:
+                    - generic [ref=e187]:
+                      - generic [ref=e189]:
+                        - img [ref=e190]
+                        - generic [ref=e192]: "3.32"
+                      - generic [ref=e193]: 6 лет
+                    - generic [ref=e194]:
+                      - generic [ref=e196]: Институт Delta маркетинга
+                      - generic [ref=e197]: Интенсив "ABC-анализ" для цели "Найти работу" — с разбором кейсов
+                      - generic [ref=e200]: ABC-анализ
+                    - generic [ref=e203]: 29 946 €
+                    - button "Далее" [ref=e204]
+                  - link [ref=e205] [cursor=pointer]:
+                    - /url: /courses/19-intensiv-abc-analiz-dlya-celi-nayti-rabotu-s-razborom-keysov
+                  - link [ref=e206] [cursor=pointer]:
+                    - /url: http://www.sestakova.com/omnis-laboriosam-corrupti-blanditiis-et-blanditiis?page=courses
+                - generic [ref=e208]:
+                  - generic [ref=e211] [cursor=pointer]:
+                    - generic [ref=e212]:
+                      - generic [ref=e214]:
+                        - img [ref=e215]
+                        - generic [ref=e217]: "5.00"
+                      - generic [ref=e218]: 23 часа
+                    - generic [ref=e219]:
+                      - generic [ref=e220]:
+                        - img "Логотип Лаборатория Atlas аналитики и Data Science" [ref=e221]
+                        - generic [ref=e222]: Лаборатория Atlas аналитики и Data Science
+                      - generic [ref=e223]: Курс для мамкиного аналитика
+                      - generic [ref=e226]: .NET Core
+                    - generic [ref=e229]: Бесплатно
+                    - button "Далее" [ref=e230]
+                  - link [ref=e231] [cursor=pointer]:
+                    - /url: /courses/263-kurs-dlya-mamkinogo-analitika
+                  - link [ref=e232] [cursor=pointer]:
+                    - /url: https://career.habr.com/education_centers/218-universitet-sinergiya?page=courses
+                - generic [ref=e234]:
+                  - generic [ref=e237] [cursor=pointer]:
+                    - generic [ref=e239]: 10 мес
+                    - generic [ref=e240]:
+                      - generic [ref=e242]: Лаборатория Atlas прикладных программ
+                      - generic [ref=e243]: "Imported: 3ds Max для цели \"Освоить с нуля\""
+                      - generic [ref=e246]: 3ds Max
+                    - generic [ref=e247]:
+                      - generic [ref=e248]:
+                        - generic [ref=e249]: от 8 500 ₽/мес
+                        - generic [ref=e250]: "-14%"
+                      - generic [ref=e251]: или сразу 153 600 ₽
+                    - button "Далее" [ref=e252]
+                  - link [ref=e253] [cursor=pointer]:
+                    - /url: /courses/257-imported-3ds-max-dlya-celi-osvoit-s-nulya
+                  - link [ref=e254] [cursor=pointer]:
+                    - /url: https://seed.dpo.local/import/similique-distinctio-natus-29?page=courses
+                - generic [ref=e256]:
+                  - generic [ref=e259] [cursor=pointer]:
+                    - generic [ref=e260]:
+                      - generic [ref=e262]:
+                        - img [ref=e263]
+                        - generic [ref=e265]: "3.03"
+                      - generic [ref=e266]: 8 лет
+                    - generic [ref=e267]:
+                      - generic [ref=e269]: Лаборатория Vector прикладных программ
+                      - generic [ref=e270]: 1С аналитик с нуля
+                      - generic [ref=e273]: 1С аналитик
+                    - generic [ref=e274]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: 151 960 ₽
+                        - generic [ref=e277]: "-27%"
+                      - generic [ref=e278]: 206 046 ₽
+                    - button "Далее" [ref=e279]
+                  - link [ref=e280] [cursor=pointer]:
+                    - /url: /courses/95-1s-analitik-s-nulya
+                  - link [ref=e281] [cursor=pointer]:
+                    - /url: http://morozov.com/vitae-id-et-eveniet-et-enim?page=courses
+                - generic [ref=e283]:
+                  - generic [ref=e286] [cursor=pointer]:
+                    - generic [ref=e287]:
+                      - generic [ref=e289]:
+                        - img [ref=e290]
+                        - generic [ref=e292]: "3.43"
+                      - generic [ref=e293]: 5 нед
+                    - generic [ref=e294]:
+                      - generic [ref=e296]: Институт Pioneer дизайна
+                      - generic [ref=e297]: "1С аналитик: базовый курс"
+                      - generic [ref=e298]:
+                        - generic [ref=e300]: 1С аналитик
+                        - generic [ref=e301]: "+1"
+                    - generic [ref=e304]: Бесплатно
+                    - button "Далее" [ref=e305]
+                  - link [ref=e306] [cursor=pointer]:
+                    - /url: /courses/45-1s-analitik-bazovyy-kurs
+                  - link [ref=e307] [cursor=pointer]:
+                    - /url: http://www.sysoev.ru/cumque-consectetur-ullam-quibusdam-omnis-ullam-assumenda-omnis?page=courses
+              - button [ref=e308] [cursor=pointer]:
+                - img [ref=e309]
+              - button [ref=e311] [cursor=pointer]:
+                - img [ref=e312]
+            - link "Перейти ко всем курсам" [ref=e314] [cursor=pointer]:
+              - /url: /courses/menedzhment
+          - generic [ref=e315]:
+            - generic [ref=e316]:
+              - generic [ref=e317]: Искусственный интеллект
+              - generic [ref=e318]: Курсы для тех, кто хочет работать эффективнее или просто меньше
+            - img "Робот ИИ" [ref=e319]
+            - link [ref=e320] [cursor=pointer]:
+              - /url: /courses/analitika/ai
+          - generic [ref=e321]:
+            - heading "Бесплатные курсы" [level=2] [ref=e322]
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - button "Все" [ref=e326] [cursor=pointer]
+                - button "Программирование и IT" [ref=e328] [cursor=pointer]
+                - button "Аналитика и Data Science" [ref=e330] [cursor=pointer]
+                - button "Дизайн и контент" [ref=e332] [cursor=pointer]
+                - button "Бизнес и менеджмент" [ref=e334] [cursor=pointer]
+                - button "Маркетинг и продажи" [ref=e336] [cursor=pointer]
+                - button "Финансы и бухгалтерия" [ref=e338] [cursor=pointer]
+                - button "HR и рекрутинг" [ref=e340] [cursor=pointer]
+                - button "Прикладные программы" [ref=e342] [cursor=pointer]
+                - button "Саморазвитие и soft skills" [ref=e344] [cursor=pointer]
+                - button "Хобби и творчество" [ref=e346] [cursor=pointer]
+              - button [ref=e347] [cursor=pointer]:
+                - img [ref=e348]
+            - generic [ref=e350]:
+              - generic [ref=e352]:
+                - generic [ref=e354]:
+                  - generic [ref=e357] [cursor=pointer]:
+                    - generic [ref=e359]: 8 час
+                    - generic [ref=e360]:
+                      - generic [ref=e362]: Академия Nova дизайна
+                      - generic [ref=e363]: 2D-графика интенсив
+                      - generic [ref=e364]:
+                        - generic [ref=e366]: 2D-графика
+                        - generic [ref=e367]: "+1"
+                    - generic [ref=e370]: Бесплатно
+                    - button "Далее" [ref=e371]
+                  - link [ref=e372] [cursor=pointer]:
+                    - /url: /courses/23-2d-grafika-intensiv
+                  - link [ref=e373] [cursor=pointer]:
+                    - /url: http://www.merkusev.com/facere-asperiores-aliquam-ut-voluptatem-rerum-sint-molestias?page=courses
+                - generic [ref=e375]:
+                  - generic [ref=e378] [cursor=pointer]:
+                    - generic [ref=e379]:
+                      - generic [ref=e381]:
+                        - img [ref=e382]
+                        - generic [ref=e384]: "2.73"
+                      - generic [ref=e385]: 6 лет
+                    - generic [ref=e386]:
+                      - generic [ref=e388]: Академия Nova HR и рекрутинга
+                      - generic [ref=e389]: ABAP интенсив
+                      - generic [ref=e390]:
+                        - generic [ref=e392]: 3D моделирование
+                        - generic [ref=e393]: "+1"
+                    - generic [ref=e396]: Бесплатно
+                    - button "Далее" [ref=e397]
+                  - link [ref=e398] [cursor=pointer]:
+                    - /url: /courses/149-abap-intensiv
+                  - link [ref=e399] [cursor=pointer]:
+                    - /url: https://kostin.org/dolore-omnis-numquam-praesentium-et-consectetur-explicabo-magni.html?page=courses
+                - generic [ref=e401]:
+                  - generic [ref=e404] [cursor=pointer]:
+                    - generic [ref=e405]:
+                      - generic [ref=e407]:
+                        - img [ref=e408]
+                        - generic [ref=e410]: "3.38"
+                      - generic [ref=e411]: 8 мес
+                    - generic [ref=e412]:
+                      - generic [ref=e414]: Центр Sigma soft skills
+                      - generic [ref=e415]: A/B тестирование интенсив
+                      - generic [ref=e418]: 3D анимация
+                    - generic [ref=e421]: Бесплатно
+                    - button "Далее" [ref=e422]
+                  - link [ref=e423] [cursor=pointer]:
+                    - /url: /courses/177-a-b-testirovanie-intensiv
+                  - link [ref=e424] [cursor=pointer]:
+                    - /url: http://kovaleva.org/sed-esse-sit-odio-necessitatibus.html?page=courses
+                - generic [ref=e426]:
+                  - generic [ref=e429] [cursor=pointer]:
+                    - generic [ref=e430]:
+                      - generic [ref=e432]:
+                        - img [ref=e433]
+                        - generic [ref=e435]: "3.43"
+                      - generic [ref=e436]: 5 нед
+                    - generic [ref=e437]:
+                      - generic [ref=e439]: Институт Pioneer дизайна
+                      - generic [ref=e440]: "1С аналитик: базовый курс"
+                      - generic [ref=e441]:
+                        - generic [ref=e443]: 1С аналитик
+                        - generic [ref=e444]: "+1"
+                    - generic [ref=e447]: Бесплатно
+                    - button "Далее" [ref=e448]
+                  - link [ref=e449] [cursor=pointer]:
+                    - /url: /courses/45-1s-analitik-bazovyy-kurs
+                  - link [ref=e450] [cursor=pointer]:
+                    - /url: http://www.sysoev.ru/cumque-consectetur-ullam-quibusdam-omnis-ullam-assumenda-omnis?page=courses
+                - generic [ref=e452]:
+                  - generic [ref=e455] [cursor=pointer]:
+                    - generic [ref=e456]:
+                      - generic [ref=e458]:
+                        - img [ref=e459]
+                        - generic [ref=e461]: "2.31"
+                      - generic [ref=e462]: 7 нед
+                    - generic [ref=e463]:
+                      - generic [ref=e465]: Лаборатория Sigma аналитики и Data Science
+                      - generic [ref=e466]: "Профессия: ActiveCollab (HR и рекрутинг) — с наставником"
+                      - generic [ref=e469]: 3D анимация
+                    - generic [ref=e472]: Бесплатно
+                    - button "Далее" [ref=e473]
+                  - link [ref=e474] [cursor=pointer]:
+                    - /url: /courses/197-professiya-activecollab-hr-i-rekruting-s-nastavnikom
+                  - link [ref=e475] [cursor=pointer]:
+                    - /url: http://www.makarova.ru/accusamus-doloremque-excepturi-est-vel-exercitationem?page=courses
+                - generic [ref=e477]:
+                  - generic [ref=e480] [cursor=pointer]:
+                    - generic [ref=e482]: 9 нед
+                    - generic [ref=e483]:
+                      - generic [ref=e485]: Центр Orbit HR и рекрутинга
+                      - generic [ref=e486]: A/B тестирование
+                      - generic [ref=e487]:
+                        - generic [ref=e489]: A/B тестирование
+                        - generic [ref=e490]: "+1"
+                    - generic [ref=e493]: Бесплатно
+                    - button "Далее" [ref=e494]
+                  - link [ref=e495] [cursor=pointer]:
+                    - /url: /courses/169-a-b-testirovanie
+                  - link [ref=e496] [cursor=pointer]:
+                    - /url: http://martynov.net/et-aut-ut-eius-quia-qui-non?page=courses
+              - button [ref=e497] [cursor=pointer]:
+                - img [ref=e498]
+              - button [active] [ref=e500] [cursor=pointer]:
+                - img [ref=e501]
+            - link "Перейти ко всем курсам" [ref=e503] [cursor=pointer]:
+              - /url: /courses/besplatnye/programmirovanie
+          - generic [ref=e504]:
+            - heading "Отзывы об онлайн-школах" [level=2] [ref=e505]
+            - generic [ref=e506]:
+              - generic [ref=e508]:
+                - generic [ref=e510]:
+                  - generic [ref=e512]:
+                    - generic [ref=e513]:
+                      - generic [ref=e514]:
+                        - generic [ref=e515]: Тимофеев Валерий Александрович
+                        - generic [ref=e516]:
+                          - text: Пользователь
+                          - generic [ref=e517]:
+                            - text: Хабра
+                            - img [ref=e518]
+                      - generic [ref=e520]:
+                        - generic [ref=e521]:
+                          - img [ref=e522]
+                          - img [ref=e524]
+                          - img [ref=e526]
+                          - img [ref=e528]
+                          - img [ref=e530]
+                        - time [ref=e532]: 15 марта
+                    - generic [ref=e533]:
+                      - link "Интенсив \"Active Directory\" для цели \"Найти работу\" — с карьерным треком" [ref=e535] [cursor=pointer]:
+                        - /url: https://www.lobanova.ru/voluptatem-eaque-voluptatem-esse-et
+                      - generic [ref=e538]: "Комментарий: Я уж тебя знал. — Разве у вас умирали — крестьяне? — Ох, батюшка, осьмнадцать человека — сказала хозяйка, следуя за ним. — Почему ж не посечь? На такое рассуждение барин."
+                  - link [ref=e539] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/139-institut-pioneer-hr-i-rekrutinga/39-intensiv-active-directory-dlya-celi-nayti-rabotu-s-karernym-trekom/663
+                - generic [ref=e541]:
+                  - generic [ref=e543]:
+                    - generic [ref=e544]:
+                      - generic [ref=e545]:
+                        - generic [ref=e546]: Киселёва Анфиса Борисовна
+                        - generic [ref=e547]:
+                          - text: Пользователь
+                          - generic [ref=e548]:
+                            - text: Хабра
+                            - img [ref=e549]
+                      - generic [ref=e551]:
+                        - generic [ref=e552]:
+                          - img [ref=e553]
+                          - img [ref=e555]
+                          - img [ref=e557]
+                          - img [ref=e559]
+                          - img [ref=e561]
+                        - time [ref=e563]: 16 января
+                    - generic [ref=e564]:
+                      - 'link "Аналитика и Data Science: AARRR — с практикой на реальных задачах" [ref=e566] [cursor=pointer]':
+                        - /url: http://turova.ru/a-expedita-dolorem-excepturi-soluta
+                      - generic [ref=e569]: "Комментарий: Настасья Петровна? хорошее имя Настасья Петровна. У меня не так. У меня к Филиппову посту — будут и птичьи перья. — Хорошо, а тебе привезу барабан. Такой славный барабан, этак."
+                  - link [ref=e570] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/135-centr-orbit-hr-i-rekrutinga/11-analitika-i-data-science-aarrr-s-praktikoy-na-realnyh-zadachah/803
+                - generic [ref=e572]:
+                  - generic [ref=e574]:
+                    - generic [ref=e575]:
+                      - img [ref=e576]
+                      - generic [ref=e577]:
+                        - generic [ref=e578]: Иван Дмитриенко
+                        - generic [ref=e579]: Пользователь
+                      - generic [ref=e580]:
+                        - generic [ref=e581]:
+                          - img [ref=e582]
+                          - img [ref=e584]
+                          - img [ref=e586]
+                          - img [ref=e588]
+                          - img [ref=e590]
+                        - time [ref=e592]: 11 марта
+                    - generic [ref=e593]:
+                      - link "Курс для мамкиного аналитика" [ref=e595] [cursor=pointer]:
+                        - /url: https://career.habr.com/education_centers/218-universitet-sinergiya
+                      - generic [ref=e598]: "Комментарий: Мне курс понравился, много полезной информации"
+                  - link [ref=e599] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/83-laboratoriya-atlas-analitiki-i-data-science/263-kurs-dlya-mamkinogo-analitika/1435
+                - generic [ref=e601]:
+                  - generic [ref=e603]:
+                    - generic [ref=e604]:
+                      - img [ref=e605]
+                      - generic [ref=e606]:
+                        - generic [ref=e607]: Жукова Зинаида Львовна
+                        - generic [ref=e608]: Пользователь
+                      - generic [ref=e609]:
+                        - generic [ref=e610]:
+                          - img [ref=e611]
+                          - img [ref=e613]
+                          - img [ref=e615]
+                          - img [ref=e617]
+                          - img [ref=e619]
+                        - time [ref=e621]: 13 января
+                    - generic [ref=e622]:
+                      - link ".NET MAUI интенсив" [ref=e624] [cursor=pointer]:
+                        - /url: http://gusev.org/architecto-hic-enim-ipsum-tempore
+                      - generic [ref=e627]: "Комментарий: Чичиков, начинавший уже несколько минут перед дверями гостиной, взаимно упрашивая друг друга пройти вперед. — Сделайте милость, не беспокойтесь так для меня, я пройду после."
+                  - link [ref=e628] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/71-akademiya-nova-programmirovaniya/163-net-maui-intensiv/1427
+                - generic [ref=e630]:
+                  - generic [ref=e632]:
+                    - generic [ref=e633]:
+                      - img [ref=e634]
+                      - generic [ref=e635]:
+                        - generic [ref=e636]: Фокин Гарри Борисович
+                        - generic [ref=e637]: Пользователь
+                      - generic [ref=e638]:
+                        - generic [ref=e639]:
+                          - img [ref=e640]
+                          - img [ref=e642]
+                          - img [ref=e644]
+                          - img [ref=e646]
+                          - img [ref=e648]
+                        - time [ref=e650]: октябрь 2025
+                    - generic [ref=e651]:
+                      - 'link "Маркетинг и продажи: 2d-анимация — с разбором кейсов" [ref=e653] [cursor=pointer]':
+                        - /url: http://www.veselov.org/
+                      - generic [ref=e656]: "Комментарий: Я уже дело свое — знаю. Я знаю, что выиграю, да мне нужно. — Да что в губернских городах, где за два рубля в сутки проезжающие получают покойную комнату с тараканами."
+                  - link [ref=e657] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/121-centr-prime-programmirovaniya/31-marketing-i-prodazhi-2d-animaciya-s-razborom-keysov/1309
+                - generic [ref=e659]:
+                  - generic [ref=e661]:
+                    - generic [ref=e662]:
+                      - img [ref=e663]
+                      - generic [ref=e664]:
+                        - generic [ref=e665]: Горшков Леонид Александрович
+                        - generic [ref=e666]: Пользователь
+                      - generic [ref=e667]:
+                        - generic [ref=e668]:
+                          - img [ref=e669]
+                          - img [ref=e671]
+                          - img [ref=e673]
+                          - img [ref=e675]
+                          - img [ref=e677]
+                        - time [ref=e679]: сентябрь 2025
+                    - generic [ref=e680]:
+                      - link "3D-художник для начинающих" [ref=e682] [cursor=pointer]:
+                        - /url: http://www.hohlov.org/
+                      - generic [ref=e685]: "Комментарий: Послушай, Чичиков, ты должен кормить, потому что ты думаешь, доедет то колесо, если б ты — знал, волокита Кувшинников! Мы с ним о деле, поступил неосторожно, как ребенок, как."
+                  - link [ref=e686] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/125-institut-focus-programmirovaniya/133-3d-hudozhnik-dlya-nachinayuschih/295
+                - generic [ref=e688]:
+                  - generic [ref=e690]:
+                    - generic [ref=e691]:
+                      - img [ref=e692]
+                      - generic [ref=e693]:
+                        - generic [ref=e694]: Нестор Алексеевич Харитонов
+                        - generic [ref=e695]: Пользователь
+                      - generic [ref=e696]:
+                        - generic [ref=e697]:
+                          - img [ref=e698]
+                          - img [ref=e700]
+                          - img [ref=e702]
+                          - img [ref=e704]
+                          - img [ref=e706]
+                        - time [ref=e708]: июль 2025
+                    - generic [ref=e709]:
+                      - link ".NET MAUI интенсив" [ref=e711] [cursor=pointer]:
+                        - /url: http://gusev.org/architecto-hic-enim-ipsum-tempore
+                      - generic [ref=e714]: "Комментарий: Селифан потянул поводья назад, чужой кучер сделал то же, лошади несколько попятились назад и увидел, что не охотник. — Да какая просьба? — Ну, к Собакевичу. Здесь Ноздрей."
+                  - link [ref=e715] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/71-akademiya-nova-programmirovaniya/163-net-maui-intensiv/1431
+                - generic [ref=e717]:
+                  - generic [ref=e719]:
+                    - generic [ref=e720]:
+                      - img [ref=e721]
+                      - generic [ref=e722]:
+                        - generic [ref=e723]: Святослав Андреевич Беляков
+                        - generic [ref=e724]: Пользователь
+                      - generic [ref=e725]:
+                        - generic [ref=e726]:
+                          - img [ref=e727]
+                          - img [ref=e729]
+                          - img [ref=e731]
+                          - img [ref=e733]
+                          - img [ref=e735]
+                        - time [ref=e737]: июнь 2025
+                    - generic [ref=e738]:
+                      - 'link "1С аналитик: базовый курс" [ref=e740] [cursor=pointer]':
+                        - /url: http://www.sysoev.ru/cumque-consectetur-ullam-quibusdam-omnis-ullam-assumenda-omnis
+                      - generic [ref=e743]: "Комментарий: А Еремей Сорокоплёхин! да этот — мужик один станет за всех, в Москве торговал, одного оброку приносил — по пятисот рублей. Ведь вот какой народ! Это не — считал. — Да."
+                  - link [ref=e744] [cursor=pointer]:
+                    - /url: /education_centers/otzyvy/99-institut-pioneer-dizayna/45-1s-analitik-bazovyy-kurs/431
+              - button [ref=e745] [cursor=pointer]:
+                - img [ref=e746]
+              - button [ref=e748] [cursor=pointer]:
+                - img [ref=e749]
+            - link "Посмотреть все отзывы" [ref=e751] [cursor=pointer]:
+              - /url: /education_centers/otzyvy
+          - generic [ref=e752]:
+            - heading "Популярные онлайн-школы" [level=2] [ref=e753]
+            - generic [ref=e754]:
+              - generic [ref=e756]:
+                - generic [ref=e758] [cursor=pointer]:
+                  - generic [ref=e760]:
+                    - img [ref=e761]
+                    - generic [ref=e762]: Школа Vertex финансов
+                    - generic [ref=e763]:
+                      - img [ref=e765]
+                      - generic [ref=e766]: "+16"
+                    - button "Подробнее" [ref=e767]
+                  - link [ref=e768]:
+                    - /url: /education_centers/127-shkola-vertex-finansov
+                - generic [ref=e770] [cursor=pointer]:
+                  - img "Обложка образовательной организации" [ref=e772]
+                  - generic [ref=e773]:
+                    - img [ref=e774]
+                    - generic [ref=e775]:
+                      - generic [ref=e776]:
+                        - img [ref=e777]
+                        - generic [ref=e779]: "2.60"
+                      - generic [ref=e780]:
+                        - img [ref=e781]
+                        - generic [ref=e783]: "23"
+                    - generic [ref=e784]: Лаборатория Atlas аналитики и Data Science
+                    - button "Подробнее" [ref=e785]
+                  - link [ref=e786]:
+                    - /url: /education_centers/83-laboratoriya-atlas-analitiki-i-data-science
+                - generic [ref=e788] [cursor=pointer]:
+                  - generic [ref=e790]:
+                    - generic [ref=e791]: Школа Vertex прикладных программ
+                    - generic [ref=e792]:
+                      - img [ref=e794]
+                      - img [ref=e796]
+                      - img [ref=e798]
+                      - generic [ref=e799]: "+8"
+                    - button "Подробнее" [ref=e800]
+                  - link [ref=e801]:
+                    - /url: /education_centers/147-shkola-vertex-prikladnyh-programm
+                - generic [ref=e803] [cursor=pointer]:
+                  - generic [ref=e805]:
+                    - generic [ref=e806]: Академия Nova маркетинга
+                    - button "Подробнее" [ref=e807]
+                  - link [ref=e808]:
+                    - /url: /education_centers/111-akademiya-nova-marketinga
+                - generic [ref=e810] [cursor=pointer]:
+                  - generic [ref=e812]:
+                    - generic [ref=e813]:
+                      - generic [ref=e814]:
+                        - img [ref=e815]
+                        - generic [ref=e817]: "2.92"
+                      - generic [ref=e818]:
+                        - img [ref=e819]
+                        - generic [ref=e821]: "19"
+                    - generic [ref=e822]: Институт Pioneer HR и рекрутинга
+                    - button "Подробнее" [ref=e823]
+                  - link [ref=e824]:
+                    - /url: /education_centers/139-institut-pioneer-hr-i-rekrutinga
+                - generic [ref=e826] [cursor=pointer]:
+                  - generic [ref=e828]:
+                    - generic [ref=e829]:
+                      - generic [ref=e830]:
+                        - img [ref=e831]
+                        - generic [ref=e833]: "3.40"
+                      - generic [ref=e834]:
+                        - img [ref=e835]
+                        - generic [ref=e837]: "23"
+                    - generic [ref=e838]: Центр Sigma soft skills
+                    - button "Подробнее" [ref=e839]
+                  - link [ref=e840]:
+                    - /url: /education_centers/109-centr-sigma-soft-skills
+                - generic [ref=e842] [cursor=pointer]:
+                  - generic [ref=e844]:
+                    - generic [ref=e845]:
+                      - generic [ref=e846]:
+                        - img [ref=e847]
+                        - generic [ref=e849]: "3.29"
+                      - generic [ref=e850]:
+                        - img [ref=e851]
+                        - generic [ref=e853]: "10"
+                    - generic [ref=e854]: Школа Prime финансов
+                    - button "Подробнее" [ref=e855]
+                  - link [ref=e856]:
+                    - /url: /education_centers/81-shkola-prime-finansov
+                - generic [ref=e858] [cursor=pointer]:
+                  - generic [ref=e860]:
+                    - generic [ref=e861]: Центр Orbit маркетинга
+                    - button "Подробнее" [ref=e862]
+                  - link [ref=e863]:
+                    - /url: /education_centers/115-centr-orbit-marketinga
+              - button [ref=e864] [cursor=pointer]:
+                - img [ref=e865]
+              - button [ref=e867] [cursor=pointer]:
+                - img [ref=e868]
+            - link "Перейти ко всем школам" [ref=e870] [cursor=pointer]:
+              - /url: /education_centers
+          - generic [ref=e871]:
+            - img "Агент H" [ref=e872]
+            - generic [ref=e873]:
+              - generic [ref=e874]: Долистали до конца?
+              - generic [ref=e875]: Предлагаем вернуться в начало, как ни в чем не бывало
+              - button "Вернуться в начало" [ref=e876] [cursor=pointer]
+          - generic [ref=e877]:
+            - heading "Промокоды и акции" [level=2] [ref=e878]
+            - generic [ref=e880]:
+              - link "Школа Delta менеджмента Скидка 6%" [ref=e881] [cursor=pointer]:
+                - /url: /education/promocodes/153-shkola-delta-menedzhmenta
+                - generic [ref=e882]: Школа Delta менеджмента
+                - generic [ref=e883]:
+                  - img [ref=e884]
+                  - text: Скидка 6%
+              - link "Центр Orbit HR и рекрутинга Скидка 20%" [ref=e886] [cursor=pointer]:
+                - /url: /education/promocodes/135-centr-orbit-hr-i-rekrutinga
+                - generic [ref=e887]: Центр Orbit HR и рекрутинга
+                - generic [ref=e888]:
+                  - img [ref=e889]
+                  - text: Скидка 20%
+              - link "Лаборатория Vector прикладных программ Скидка 6%" [ref=e891] [cursor=pointer]:
+                - /url: /education/promocodes/97-laboratoriya-vector-prikladnyh-programm
+                - generic [ref=e892]: Лаборатория Vector прикладных программ
+                - generic [ref=e893]:
+                  - img [ref=e894]
+                  - text: Скидка 6%
+              - link "Школа Vertex менеджмента Скидка 29%" [ref=e896] [cursor=pointer]:
+                - /url: /education/promocodes/107-shkola-vertex-menedzhmenta
+                - generic [ref=e897]: Школа Vertex менеджмента
+                - generic [ref=e898]:
+                  - img [ref=e899]
+                  - text: Скидка 29%
+              - link "Академия Nova программирования Скидка 13%" [ref=e901] [cursor=pointer]:
+                - /url: /education/promocodes/71-akademiya-nova-programmirovaniya
+                - generic [ref=e902]: Академия Nova программирования
+                - generic [ref=e903]:
+                  - img [ref=e904]
+                  - text: Скидка 13%
+              - link "Школа Vertex прикладных программ Скидка 14%" [ref=e906] [cursor=pointer]:
+                - /url: /education/promocodes/147-shkola-vertex-prikladnyh-programm
+                - generic [ref=e907]: Школа Vertex прикладных программ
+                - generic [ref=e908]:
+                  - img [ref=e909]
+                  - text: Скидка 14%
+              - link "Центр Orbit маркетинга Скидка 22%" [ref=e911] [cursor=pointer]:
+                - /url: /education/promocodes/115-centr-orbit-marketinga
+                - generic [ref=e912]: Центр Orbit маркетинга
+                - generic [ref=e913]:
+                  - img [ref=e914]
+                  - text: Скидка 22%
+              - link "Институт Pioneer дизайна Скидка 29%" [ref=e916] [cursor=pointer]:
+                - /url: /education/promocodes/99-institut-pioneer-dizayna
+                - generic [ref=e917]: Институт Pioneer дизайна
+                - generic [ref=e918]:
+                  - img [ref=e919]
+                  - text: Скидка 29%
+              - link "Школа Vertex финансов Скидка 30.98 €" [ref=e921] [cursor=pointer]:
+                - /url: /education/promocodes/127-shkola-vertex-finansov
+                - generic [ref=e922]: Школа Vertex финансов
+                - generic [ref=e923]:
+                  - img [ref=e924]
+                  - text: Скидка 30.98 €
+              - link "Школа Delta аналитики и Data Science Скидка 207 ₽" [ref=e926] [cursor=pointer]:
+                - /url: /education/promocodes/133-shkola-delta-analitiki-i-data-science
+                - generic [ref=e927]: Школа Delta аналитики и Data Science
+                - generic [ref=e928]:
+                  - img [ref=e929]
+                  - text: Скидка 207 ₽
+              - link "Институт Focus программирования Скидка 78.92 ₽" [ref=e931] [cursor=pointer]:
+                - /url: /education/promocodes/125-institut-focus-programmirovaniya
+                - generic [ref=e932]: Институт Focus программирования
+                - generic [ref=e933]:
+                  - img [ref=e934]
+                  - text: Скидка 78.92 ₽
+              - link "Институт Pioneer программирования Скидка 41.42 €" [ref=e936] [cursor=pointer]:
+                - /url: /education/promocodes/79-institut-pioneer-programmirovaniya
+                - generic [ref=e937]: Институт Pioneer программирования
+                - generic [ref=e938]:
+                  - img [ref=e939]
+                  - text: Скидка 41.42 €
+              - link "Академия Vector маркетинга Скидка 179.14 €" [ref=e941] [cursor=pointer]:
+                - /url: /education/promocodes/157-akademiya-vector-marketinga
+                - generic [ref=e942]: Академия Vector маркетинга
+                - generic [ref=e943]:
+                  - img [ref=e944]
+                  - text: Скидка 179.14 €
+              - link "Институт Pioneer HR и рекрутинга Скидка 112.67 €" [ref=e946] [cursor=pointer]:
+                - /url: /education/promocodes/139-institut-pioneer-hr-i-rekrutinga
+                - generic [ref=e947]: Институт Pioneer HR и рекрутинга
+                - generic [ref=e948]:
+                  - img [ref=e949]
+                  - text: Скидка 112.67 €
+              - link "Центр Sigma HR и рекрутинга на обучение по направлению прикладные программы" [ref=e951] [cursor=pointer]:
+                - /url: /education/promocodes/89-centr-sigma-hr-i-rekrutinga
+                - generic [ref=e952]: Центр Sigma HR и рекрутинга
+                - generic [ref=e953]:
+                  - img [ref=e954]
+                  - text: на обучение по направлению прикладные программы
+              - link "Центр Orbit дизайна на обучение по направлению аналитика и data science" [ref=e956] [cursor=pointer]:
+                - /url: /education/promocodes/95-centr-orbit-dizayna
+                - generic [ref=e957]: Центр Orbit дизайна
+                - generic [ref=e958]:
+                  - img [ref=e959]
+                  - text: на обучение по направлению аналитика и data science
+              - link "Институт Pioneer soft skills на пакет направлений хобби и творчество и программирование и it" [ref=e961] [cursor=pointer]:
+                - /url: /education/promocodes/159-institut-pioneer-soft-skills
+                - generic [ref=e962]: Институт Pioneer soft skills
+                - generic [ref=e963]:
+                  - img [ref=e964]
+                  - text: на пакет направлений хобби и творчество и программирование и it
+              - link "Академия Focus финансов на программы в направлении аналитика и data science" [ref=e966] [cursor=pointer]:
+                - /url: /education/promocodes/85-akademiya-focus-finansov
+                - generic [ref=e967]: Академия Focus финансов
+                - generic [ref=e968]:
+                  - img [ref=e969]
+                  - text: на программы в направлении аналитика и data science
+            - button "Смотреть все" [ref=e971] [cursor=pointer]
+          - generic [ref=e972]:
+            - heading "Популярные направления" [level=2] [ref=e973]
+            - generic [ref=e975]:
+              - generic [ref=e976]:
+                - link "Программирование и IT" [ref=e977] [cursor=pointer]:
+                  - /url: /courses/programmirovanie
+                - generic [ref=e978]: "7"
+              - generic [ref=e979]:
+                - link "Аналитика и Data Science" [ref=e980] [cursor=pointer]:
+                  - /url: /courses/analitika
+                - generic [ref=e981]: "1"
+              - link "Дизайн и контент" [ref=e983] [cursor=pointer]:
+                - /url: /courses/dizajn
+              - generic [ref=e984]:
+                - link "Бизнес и менеджмент" [ref=e985] [cursor=pointer]:
+                  - /url: /courses/menedzhment
+                - generic [ref=e986]: "3"
+              - link "Маркетинг и продажи" [ref=e988] [cursor=pointer]:
+                - /url: /courses/marketing
+              - link "Финансы и бухгалтерия" [ref=e990] [cursor=pointer]:
+                - /url: /courses/finansy
+              - link "HR и рекрутинг" [ref=e992] [cursor=pointer]:
+                - /url: /courses/hr-upravlenie-personalom
+              - link "Прикладные программы" [ref=e994] [cursor=pointer]:
+                - /url: /courses/microsoft-office
+              - link "Саморазвитие и soft skills" [ref=e996] [cursor=pointer]:
+                - /url: /courses/samorazvitie
+              - link "Хобби и творчество" [ref=e998] [cursor=pointer]:
+                - /url: /courses/creativity-hobby
+            - button "Смотреть все" [ref=e999] [cursor=pointer]
+    - contentinfo [ref=e1000]:
+      - generic [ref=e1002]:
+        - list [ref=e1003]:
+          - listitem [ref=e1004]:
+            - img [ref=e1006]
+            - link "Хабр" [ref=e1008] [cursor=pointer]:
+              - /url: https://habr.com/?utm_source=habr_career&amp;utm_medium=habr_top_panel
+          - listitem [ref=e1009]:
+            - img [ref=e1011]
+            - link "Q&A" [ref=e1013] [cursor=pointer]:
+              - /url: https://qna.habr.com/?utm_source=habr_career&amp;utm_medium=habr_top_panel
+          - listitem [ref=e1014]:
+            - img [ref=e1016]
+            - link "Карьера" [ref=e1018] [cursor=pointer]:
+              - /url: https://career.habr.com/
+          - listitem [ref=e1019]:
+            - img [ref=e1021]
+            - link "Курсы" [ref=e1023] [cursor=pointer]:
+              - /url: https://career.habr.com/education
+        - list [ref=e1024]:
+          - listitem [ref=e1025]:
+            - link "Список онлайн-школ" [ref=e1026] [cursor=pointer]:
+              - /url: /education_centers
+          - listitem [ref=e1027]:
+            - link "Рейтинг онлайн-школ" [ref=e1028] [cursor=pointer]:
+              - /url: /education_centers/rating
+          - listitem [ref=e1029]:
+            - link "Промокоды и скидки" [ref=e1030] [cursor=pointer]:
+              - /url: /education/promocodes
+          - listitem [ref=e1031]:
+            - link "Соглашение с пользователем" [ref=e1032] [cursor=pointer]:
+              - /url: /info/legal/agreement
+        - list [ref=e1033]:
+          - listitem [ref=e1034]:
+            - link "Правила оказания услуг" [ref=e1035] [cursor=pointer]:
+              - /url: /info/legal/rules
+          - listitem [ref=e1036]:
+            - link "Карта сайта" [ref=e1037] [cursor=pointer]:
+              - /url: /sitemap
+        - generic [ref=e1038]:
+          - list [ref=e1039]:
+            - listitem [ref=e1040]:
+              - link "Мы в Twitter" [ref=e1041] [cursor=pointer]:
+                - /url: https://twitter.com/habr_career
+                - img [ref=e1042]
+            - listitem [ref=e1044]:
+              - link "Мы в Facebook" [ref=e1045] [cursor=pointer]:
+                - /url: https://www.facebook.com/career.habr
+                - img [ref=e1046]
+            - listitem [ref=e1048]:
+              - link "Мы во Вконтакте" [ref=e1049] [cursor=pointer]:
+                - /url: https://vk.com/habr_career
+                - img [ref=e1050]
+            - listitem [ref=e1052]:
+              - link "Мы в Instagram" [ref=e1053] [cursor=pointer]:
+                - /url: https://www.instagram.com/habr_career/
+                - img [ref=e1054]
+            - listitem [ref=e1056]:
+              - link "Мы в Telegram" [ref=e1057] [cursor=pointer]:
+                - /url: https://telegram.me/habr_career
+                - img [ref=e1058]
+            - listitem [ref=e1060]:
+              - link "Наш телеграм-бот" [ref=e1061] [cursor=pointer]:
+                - /url: https://t.me/habrcareer_bot
+                - img [ref=e1062]
+          - link "© Habr" [ref=e1064] [cursor=pointer]:
+            - /url: https://company.habr.com/
+  - iframe
+```
