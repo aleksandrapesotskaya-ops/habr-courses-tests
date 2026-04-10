@@ -184,4 +184,8 @@ test("Главная страница образования", async ({ page }) 
   await test.step("Проверяем, что при клике на таб 'Детям' урл меняется на /education#school", async () => {
     await mainPage.checkTabforChildren();
   });
+
+  await test.step("Проверяем, что при клике на таб 'промокоды' открывается новая вкладка с промокодами", async () => {
+    await mainPage.checkTabPromocodes();
+  });
 });

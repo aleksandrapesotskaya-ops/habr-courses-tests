@@ -210,7 +210,7 @@ export class MainPage {
     );
     await expect(tabForChildren).toBeVisible();
     await tabForChildren.click();
-    await expect(this.page).toHaveURL("/education\/#school/");
+    await expect(this.page).toHaveURL("/education#school");
   }
   // проверка, что по клику на таб "Промокоды" открывается новая вкладка /education/promocodes
   async checkTabPromocodes() {
