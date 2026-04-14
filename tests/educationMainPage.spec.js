@@ -4,188 +4,183 @@ import { BlocksMain } from "../pages/elements/BlocksMain";
 
 test.describe.configure({ mode: "parallel" });
 
-test("Главная страница образования", async ({ page }) => {
-  const mainPage = new MainPage(page);
-  const blocksMain = new BlocksMain(page);
+test.describe("Главная страница образования", () => {
+  let mainPage;
+  let blocksMain;
 
-  await test.step("Переходим на страницу /education", async () => {
+  test.beforeEach(async ({ page }) => {
+    mainPage = new MainPage(page);
+    blocksMain = new BlocksMain(page);
+
     await mainPage.goto();
   });
 
-  await test.step('проверяем заголовок страницы "Выберите онлайн обучение"', async () => {
-    await mainPage.assertPageTitle();
-  });
+  test.describe("Хедер", () => {
+    test("проверяем заголовок страницы 'Выберите онлайн обучение'", async () => {
+      await mainPage.assertPageTitle();
+    });
 
-  await test.step("проверяем, что в Хабр курсы вшита ссылка", async () => {
-    await mainPage.assertHabrCoursesLink();
-  });
+    test("проверяем, что в Хабр курсы вшита ссылка", async () => {
+      await mainPage.assertHabrCoursesLink();
+    });
 
-  // раскрываем меню по клику на шеврон, проверяем, что открывается меню
-  await test.step("проверяем шеврон справа от Хабр курсы", async () => {
-    await mainPage.header.clickHabrCoursesDropdownButton();
-    await mainPage.header.checkHabrCoursesMenuVisible();
-  });
+    // раскрываем меню по клику на шеврон, проверяем, что открывается меню
+    test("проверяем шеврон справа от Хабр курсы", async () => {
+      await mainPage.header.clickHabrCoursesDropdownButton();
+      await mainPage.header.checkHabrCoursesMenuVisible();
+      await mainPage.assertMenuToggle(0);
+    });
 
-  // проверяем, что клик по Все сервисы Хабра никуда не ведет (нет ссылки)
-  await test.step('Проверяем, что "Все сервисы Хабра" не имеет ссылки', async () => {
-    await mainPage.assertAllServicesLinkHasNoHref();
-  });
+    // проверяем, что клик по Все сервисы Хабра никуда не ведет (нет ссылки)
+    test('Проверяем, что "Все сервисы Хабра" не имеет ссылки', async () => {
+      await mainPage.assertAllServicesLinkHasNoHref();
+    });
 
-  // проверяем, что Хабр, Q&A, Карьера, Курсы - это ссылки
-  await test.step("проверяем навигационные ссылки в хедере", async () => {
-    await mainPage.header.checkNavigationLinks();
-  });
-
-  // проверяем, что по повторному клику меню не видно
-  await test.step("Проверяем скрытие меню Хабр Курсы", async () => {
-    await mainPage.assertMenuToggle(0);
+    // проверяем, что Хабр, Q&A, Карьера, Курсы - это ссылки
+    test("проверяем навигационные ссылки в хедере", async () => {
+      await mainPage.header.checkNavigationLinks();
+    });
   });
 
   // открываем "Все курсы" по клику на шеврон
-  await test.step("Проверяем меню Все курсы", async () => {
-    await mainPage.openCoursesMenu();
-    await mainPage.assertCoursesMenuVisible();
-  });
+  test.describe("Меню 'Все курсы'", () => {
+    test.afterEach(async () => {
+      // закрываю меню после каждого теста
+      await mainPage.openCoursesMenu();
+    });
+    test("меню Все курсы открывается и закрывается", async () => {
+      await mainPage.openCoursesMenu();
+      await mainPage.assertCoursesMenuVisible();
+      await mainPage.openCoursesMenu();
+      await mainPage.assertCoursesMenuHidden();
+    });
 
-  // проверяем популярные курсы
-  await test.step("Проверяем ссылку Популярные курсы", async () => {
-    await mainPage.assertPopularCoursesLink();
-  });
+    // проверяем популярные курсы
+    test("Проверяем ссылку Популярные курсы", async () => {
+      await mainPage.openCoursesMenu();
+      await mainPage.assertPopularCoursesLink();
+    });
 
-  // проверяем категории курсов
-  await test.step("Проверяем категорию Программирование и IT", async () => {
-    await mainPage.assertNavigationToCourseCategory(
-      "Программирование и IT",
-      /\/programmirovanie$/,
-    );
-  });
+    // проверяем "Посмотреть все"
+    test("Проверяем ссылку Посмотреть все", async () => {
+      await mainPage.assertViewAllCoursesLink();
+    });
 
-  await test.step("Проверяем категорию Аналитика и Data Science", async () => {
-    await mainPage.assertNavigationToCourseCategory(
-      "Аналитика и Data Science",
-      /\/analitika$/,
-    );
-  });
+    // проверяем категории курсов
+    const categories = [
+      ["Программирование и IT", /\/programmirovanie$/],
+      ["Аналитика и Data Science", /\/analitika$/],
+      ["Дизайн и контент", /\/dizajn$/],
+      ["Маркетинг и продажи", /\/marketing$/],
+      ["Финансы и бухгалтерия", /\/finansy$/],
+    ];
 
-  await test.step("Проверяем категорию Дизайн и контент", async () => {
-    await mainPage.assertNavigationToCourseCategory(
-      "Дизайн и контент",
-      /\/dizajn$/,
-    );
-  });
-
-  await test.step("Проверяем категорию Маркетинг и продажи", async () => {
-    await mainPage.assertNavigationToCourseCategory(
-      "Маркетинг и продажи",
-      /\/marketing$/,
-    );
-  });
-
-  await test.step("Проверяем категорию Финансы и бухгалтерия", async () => {
-    await mainPage.assertNavigationToCourseCategory(
-      "Финансы и бухгалтерия",
-      /\/finansy$/,
-    );
-  });
-
-  // проверяем "Посмотреть все"
-  await test.step("Проверяем ссылку Посмотреть все", async () => {
-    await mainPage.assertViewAllCoursesLink();
-  });
-
-  // проверяем скрытие меню со всеми курсами
-  await test.step("Проверяем скрытие меню Все курсы", async () => {
-    await mainPage.openCoursesMenu();
-    await mainPage.assertCoursesMenuVisible();
-    await mainPage.openCoursesMenu();
-    await mainPage.assertCoursesMenuHidden();
+    for (const [name, url] of categories) {
+      test(`Категория курсов: ${name}`, async () => {
+        await mainPage.assertNavigationToCourseCategory(name, url);
+      });
+    }
   });
 
   // проверяем меню "Школы и Вузы"
-  await test.step("Проверяем меню Школы и Вузы", async () => {
-    await mainPage.assertSchoolsAndUniversitiesMenu();
-  });
+  test.describe("Проверяем меню Школы и Вузы", () => {
+    test("Меню открывается", async () => {
+      await mainPage.assertSchoolsAndUniversitiesMenu();
+    });
 
-  // проверяем скрытие меню "Школы и Вузы"
-  await test.step("Проверяем скрытие меню Школы и Вузы", async () => {
-    await mainPage.assertMenuToggle(2);
+    // проверяем скрытие меню "Школы и Вузы"
+    test("Проверяем скрытие меню Школы и Вузы", async () => {
+      await mainPage.assertMenuToggle(2);
+    });
   });
 
   // проверка кнопки "Найти курсы"
-  await test.step("Проверяем кнопку Найти курсы", async () => {
-    await mainPage.assertSearchButton();
+  test.describe("Проверяем поиск курсов, дропдауны", () => {
+    test("Кнопка 'Найти курсы' при пустых дропдаунах ведет на витрину курсов", async () => {
+      await mainPage.assertSearchButton();
+    });
+
+    // проверка плейсхолдеров в поиске
+    test("Проверяем поля ввода для поиска курсов", async () => {
+      await mainPage.assertSearchInputs();
+    });
+
+    // проверка дропдауна "Какое направление?"
+    test("Проверяем дропдаун выбора направления", async () => {
+      await mainPage.assertDirectionDropdown();
+    });
+
+    // проверка дропдауна "Что изучить?"
+    test("Проверяем дропдаун выбора навыка (Что изучить)", async () => {
+      await mainPage.assertSkillDropdown();
+    });
+
+    // проверка дропдауна "Какая цель?"
+    test("Проверяем дропдаун выбора цели (Какая цель)", async () => {
+      await mainPage.assertGoalDropdown();
+    });
   });
 
-  // проверка плейсхолдеров в поиске
-  await test.step("Проверяем поля ввода для поиска курсов", async () => {
-    await mainPage.assertSearchInputs();
+  test.describe("Блок 'Популярные курсы'", () => {
+    test("Проверяем работу стрелки для перелистывания табов в Популярных курсах", async () => {
+      await blocksMain.scrollArrowButtonTabPopular("Хобби и творчество");
+    });
+
+    test("Проверяем, что при клике на таб Все и Перейти ко всем курсам переходим на courses", async () => {
+      await blocksMain.clicktabAllcourses();
+    });
+
+    const tabs = [
+      "Программирование и IT",
+      "Аналитика и Data science",
+      "Дизайн и контент",
+      "Бизнес и менеджмент",
+    ];
+
+    for (const tab of tabs) {
+      test(`Проверяем, что при клике на таб: ${tab} открывается новая вкладка, на которой заполнен дропдаун "Какое направление?"`, async () => {
+        await blocksMain.checkClickTab(tab);
+      });
+    }
+
+    test("Проверяем, что карусель перелистывания карточек в Популярных курсах зациклена", async () => {
+      await blocksMain.checkInfiniteScroll();
+    });
   });
 
-  // проверка дропдауна "Какое направление?"
-  await test.step("Проверяем дропдаун выбора направления", async () => {
-    await mainPage.assertDirectionDropdown();
-  });
+  test.describe("Бесплатные курсы", () => {
+    test("Проверяем работу стрелки для перелистывания табов в Бесплатных курсах", async () => {
+      await blocksMain.scrollArrowButtonTabFree("Хобби и творчество");
+    });
 
-  // проверка дропдауна "Что изучить?"
-  await test.step("Проверяем дропдаун выбора навыка (Что изучить)", async () => {
-    await mainPage.assertSkillDropdown();
-  });
+    test("Проверяем, что по клику на таб Все и Перейти ко всем курсам переходим на /courses/besplatnye и включен чек-бокс 'Только бесплатные'", async () => {
+      await blocksMain.clicktabAllcoursesFree();
+    });
 
-  // проверка дропдауна "Какая цель?"
-  await test.step("Проверяем дропдаун выбора цели (Какая цель)", async () => {
-    await mainPage.assertGoalDropdown();
-  });
+    test("Проверяем, что по клику на таб направления, Перейти ко всем курсам переходим на /courses/besplatnye, на новой странице предзаполнен дропдаун направления и включен чек-бокс 'Только бесплатные'", async () => {
+      await blocksMain.checkClickTabFree("Программирование и IT");
+    });
 
-  await test.step("Проверяем работу стрелки для перелистывания табов в Популярных курсах", async () => {
-    await blocksMain.scrollArrowButtonTabPopular("Хобби и творчество");
-  });
+    test("Проверяем, что карусель перелистывания карточек курсов в 'Бесплатных курсах' зациклена", async () => {
+      await blocksMain.checkInfiniteScrollFree();
+    });
 
-  await test.step("Проверяем, что при клике на таб Все и Перейти ко всем курсам переходим на courses", async () => {
-    await blocksMain.clicktabAllcourses();
-  });
+    test.describe("Баннер ИИ, таб 'детям', таб 'промокоды'", () => {
+      test("Проверяем, что баннер ИИ ведет на /courses/analitika/ai", async () => {
+        await mainPage.checkBannerAi();
+      });
 
-  await test.step("Проверяем, что при клике на таб и 'Перейти ко всем курсам' открывается новая вкладка, на которой предзаполнен дропдаун 'Какое направление?'", async () => {
-    await blocksMain.checkClickTab("Программирование и IT");
-  });
-  await test.step("Проверяем, что при клике на таб и 'Перейти ко всем курсам' открывается новая вкладка, на которой предзаполнен дропдаун 'Какое направление?'", async () => {
-    await blocksMain.checkClickTab("Аналитика и Data science");
-  });
-  await test.step("Проверяем, что при клике на таб и 'Перейти ко всем курсам' открывается новая вкладка, на которой предзаполнен дропдаун 'Какое направление?'", async () => {
-    await blocksMain.checkClickTab("Дизайн и контент");
-  });
-  await test.step("Проверяем, что при клике на таб и 'Перейти ко всем курсам' открывается новая вкладка, на которой предзаполнен дропдаун 'Какое направление?'", async () => {
-    await blocksMain.checkClickTab("Бизнес и менеджмент");
-  });
+      test("Проверяем, что при клике на таб 'Детям' урл меняется на /education#school", async () => {
+        await mainPage.checkTabforChildren();
+      });
 
-  await test.step("Проверяем, что баннер ИИ ведет на /courses/analitika/ai", async () => {
-    await mainPage.checkBannerAi();
-  });
+      test("Проверяем, что при клике на таб 'промокоды' открывается новая вкладка с промокодами", async () => {
+        await mainPage.checkTabPromocodes();
+      });
 
-  await test.step("Проверяем, что карусель перелистывания карточек в 'Популярных курсах' бесконечная", async () => {
-    await blocksMain.checkInfiniteScroll();
-  });
-
-  await test.step("Проверяем работу стрелки для перелистывания табов в Бесплатных курсах", async () => {
-    await blocksMain.scrollArrowButtonTabFree("Хобби и творчество");
-  });
-
-  await test.step("Проверяем, что по клику на таб Все и Перейти ко всем курсам переходим на /courses/besplatnye и включен чек-бокс 'Только бесплатные'", async () => {
-    await blocksMain.clicktabAllcoursesFree();
-  });
-
-  await test.step("Проверяем, что по клику на таб направления, Перейти ко всем курсам переходим на /courses/besplatnye, на новой странице предзаполнен дропдаун направления и включен чек-бокс 'Только бесплатные'", async () => {
-    await blocksMain.checkClickTabFree("Программирование и IT");
-  });
-
-  await test.step("Проверяем, что карусель перелистывания карточек курсов в 'Беслпатных курсах' бесконечная", async () => {
-    await blocksMain.checkInfiniteScrollFree();
-  });
-
-  await test.step("Проверяем, что при клике на таб 'Детям' урл меняется на /education#school", async () => {
-    await mainPage.checkTabforChildren();
-  });
-
-  await test.step("Проверяем, что при клике на таб 'промокоды' открывается новая вкладка с промокодами", async () => {
-    await mainPage.checkTabPromocodes();
+      test("Проверяем, что при клике на Посмотреть все в блоке Детям открывается детская витрина курсов", async () => {
+        await mainPage.assertViewAllCoursesLinkChildren();
+      });
+    });
   });
 });

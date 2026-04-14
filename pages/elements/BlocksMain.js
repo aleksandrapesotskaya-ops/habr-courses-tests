@@ -186,9 +186,16 @@ export class BlocksMain {
     const filterButton = newPage.locator(
       'button.bg-ui-blue-50:has(div:has-text("1"))',
     );
-    const freeOnlyCheckbox = newPage.locator('input[name="freeOnly"]');
     await filterButton.click();
-    await expect(freeOnlyCheckbox).toBeChecked();
+    const filterWindow = newPage.locator(
+      '//div[.//div[normalize-space()="Поиск курсов"]]',
+    );
+    await expect(filterWindow).toBeVisible();
+
+    const toggle = newPage.locator(
+      '//label[.//span[normalize-space()="Только бесплатные"]]//input[@name="freeOnly" and @type="checkbox"]',
+    );
+    await expect(toggle).toBeChecked();
     await newPage.close();
   }
 
@@ -208,16 +215,24 @@ export class BlocksMain {
     const filterButton = newPage.locator(
       'button.bg-ui-blue-50:has(div:has-text("1"))',
     );
-    const freeOnlyCheckbox = newPage.locator('input[name="freeOnly"]');
+    // const freeOnlyCheckbox = newPage.locator('input[name="freeOnly"]');
     await filterButton.click();
-    await expect(freeOnlyCheckbox).toBeChecked();
+    const filterWindow = newPage.locator(
+      '//div[.//div[normalize-space()="Поиск курсов"]]',
+    );
+    await expect(filterWindow).toBeVisible();
+
+    const toggle = newPage.locator(
+      '//label[.//span[normalize-space()="Только бесплатные"]]//input[@name="freeOnly" and @type="checkbox"]',
+    );
+    await expect(toggle).toBeChecked();
+
     const directionInput = newPage
       .locator('//input[@placeholder="Какое направление?"]')
       .first();
     await expect(directionInput).toBeVisible();
     const inputValue = await directionInput.inputValue();
     expect(inputValue.trim()).toBe(selectedTabTextFree.trim());
-    await expect(freeOnlyCheckbox).toBeChecked();
     await newPage.close();
   }
 

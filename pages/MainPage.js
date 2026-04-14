@@ -57,7 +57,6 @@ export class MainPage {
     if (expectedUrl) {
       await link.click();
       await expect(this.page).toHaveURL(expectedUrl);
-      await this.goto(); // возвращаемся назад
     }
   }
 
@@ -94,7 +93,6 @@ export class MainPage {
     await this.openCoursesMenu();
     await this.clickCoursesMenuItem(categoryName);
     await expect(this.page).toHaveURL(expectedUrl);
-    await this.goto();
   }
 
   async assertPopularCoursesLink() {
@@ -107,19 +105,29 @@ export class MainPage {
       this.page.waitForURL(/\/courses$/),
       linkPopularCourses.click(),
     ]);
-
-    await this.goto();
   }
 
   async assertViewAllCoursesLink() {
     await this.openCoursesMenu();
+    await expect(
+      this.page.locator("div.shadow-context-menu-dropdown:visible"),
+    ).toBeVisible();
     await this.page
       .locator(
         '//a[@href="/courses" and .//p[normalize-space()="Посмотреть все"]]',
       )
       .click();
     await expect(this.page).toHaveURL(/\/courses$/);
-    await this.goto();
+  }
+
+  async assertViewAllCoursesLinkChildren() {
+    await this.openCoursesMenu();
+    await this.page
+      .locator(
+        '//a[@href="/courses-dlya-detej" and .//p[normalize-space()="Посмотреть все"]]',
+      )
+      .click();
+    await expect(this.page).toHaveURL(/\/courses-dlya-detej$/);
   }
 
   async assertSchoolsAndUniversitiesMenu() {
@@ -134,9 +142,14 @@ export class MainPage {
     ];
 
     for (const item of menuItems) {
-      await this.header.clickSchoolsAndUniversitiesDropdownButton();
-      await this.assertSchoolsMenuItem(item.name, item.url);
       await this.goto();
+      await this.header.clickSchoolsAndUniversitiesDropdownButton();
+
+      await expect(
+        this.page.locator("div.shadow-context-menu-dropdown:visible"),
+      ).toBeVisible();
+
+      await this.assertSchoolsMenuItem(item.name, item.url);
     }
   }
 
@@ -155,7 +168,6 @@ export class MainPage {
   async assertSearchButton() {
     await this.searchCoursesButton.click();
     await expect(this.page).toHaveURL(/courses/);
-    await this.goto();
   }
 
   async assertSearchInputs() {

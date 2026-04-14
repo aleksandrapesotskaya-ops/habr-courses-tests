@@ -16,8 +16,12 @@ export class Header {
       '//header//div[contains(@class, "shadow-context-menu-dropdown")]//div[text()="Все сервисы Хабра"]/../../a',
     );
 
-    this.coursesMenu = page.locator("div.shadow-context-menu-dropdown").nth(1);
-    this.schoolsMenu = page.locator("div.shadow-context-menu-dropdown").nth(2);
+    this.coursesMenu = page.locator(
+      '<span class="cursor-pointer text-small text-ui-white">Все курсы</span>',
+    );
+    this.schoolsMenu = page.locator(
+      '<span class="cursor-pointer text-small text-ui-white">Школы и Вузы</span>',
+    );
 
     // Навигационные ссылки
     this.navigationLinks = {
