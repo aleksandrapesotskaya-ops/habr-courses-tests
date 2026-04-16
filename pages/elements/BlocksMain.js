@@ -89,9 +89,8 @@ export class BlocksMain {
     const directionInput = newPage
       .locator('//input[@placeholder="Какое направление?"]')
       .first();
-    await expect(directionInput).toBeVisible();
-    const inputValue = await directionInput.inputValue();
-    expect(inputValue.trim()).toBe(selectedTabText.trim());
+
+    await expect(directionInput).toHaveValue(selectedTabText.trim());
     await newPage.close();
   }
 
@@ -187,9 +186,9 @@ export class BlocksMain {
       'button.bg-ui-blue-50:has(div:has-text("1"))',
     );
     await filterButton.click();
-    const filterWindow = newPage.locator(
-      '//div[.//div[normalize-space()="Поиск курсов"]]',
-    );
+    const filterWindow = newPage
+      .locator("div.modal-overlay:visible")
+      .filter({ hasText: "Поиск курсов" });
     await expect(filterWindow).toBeVisible();
 
     const toggle = newPage.locator(
@@ -217,9 +216,12 @@ export class BlocksMain {
     );
     // const freeOnlyCheckbox = newPage.locator('input[name="freeOnly"]');
     await filterButton.click();
-    const filterWindow = newPage.locator(
-      '//div[.//div[normalize-space()="Поиск курсов"]]',
-    );
+    await newPage
+      .locator("div.modal-overlay:visible")
+      .waitFor({ state: "visible" });
+    const filterWindow = newPage
+      .locator("div.modal-overlay:visible")
+      .filter({ hasText: "Поиск курсов" });
     await expect(filterWindow).toBeVisible();
 
     const toggle = newPage.locator(
@@ -231,8 +233,7 @@ export class BlocksMain {
       .locator('//input[@placeholder="Какое направление?"]')
       .first();
     await expect(directionInput).toBeVisible();
-    const inputValue = await directionInput.inputValue();
-    expect(inputValue.trim()).toBe(selectedTabTextFree.trim());
+    await expect(directionInput).toHaveValue(selectedTabTextFree.trim());
     await newPage.close();
   }
 

@@ -11,14 +11,18 @@ export class MainPage {
     );
     this.directionDropdown = page.locator(".align-center.flex").first();
     this.suggestionsResults = page
-      .locator(".suggestions-picker__results")
+      .locator(
+        "//div[contains(@class, 'simplebar-content')][.//div[@role='listitem']]",
+      )
       .first();
     this.searchCoursesButton = page.getByRole("button", {
       name: "Найти курсы",
     });
     this.skillInput = page.locator('//input[@placeholder="Что изучить?"]');
     this.suggestionsSkillsResults = page
-      .locator(".suggestions-picker__results-wrapper:visible")
+      .locator(
+        "//div[contains(@class, 'simplebar-content-wrapper')][@tabindex='0'][.//div[@role='listitem']]",
+      )
       .first();
 
     this.goalDropdown = page
@@ -26,7 +30,9 @@ export class MainPage {
       .first();
 
     this.suggestionsGoalResults = page
-      .locator(".suggestions-picker__results-wrapper:visible")
+      .locator(
+        "//div[contains(@class, 'simplebar-content-wrapper')][@tabindex='0'][.//div[@role='listitem']]",
+      )
       .first();
 
     this.directionInput = page.getByRole("textbox", {
