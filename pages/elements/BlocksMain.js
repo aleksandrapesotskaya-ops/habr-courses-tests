@@ -186,6 +186,9 @@ export class BlocksMain {
       'button.bg-ui-blue-50:has(div:has-text("1"))',
     );
     await filterButton.click();
+    await newPage
+      .locator("div.modal-overlay:visible")
+      .waitFor({ state: "visible", timeout: 10000 });
     const filterWindow = newPage
       .locator("div.modal-overlay:visible")
       .filter({ hasText: "Поиск курсов" });
@@ -218,7 +221,7 @@ export class BlocksMain {
     await filterButton.click();
     await newPage
       .locator("div.modal-overlay:visible")
-      .waitFor({ state: "visible" });
+      .waitFor({ state: "visible", timeout: 10000 });
     const filterWindow = newPage
       .locator("div.modal-overlay:visible")
       .filter({ hasText: "Поиск курсов" });
