@@ -42,8 +42,10 @@ export class Header {
 
   async clickCoursesMenuItemChildren(categoryName) {
     await this.page
-      .locator(`a[href*="/courses-dlya-detej/direction"]`)
-      .filter({ hasText: categoryName })
+      .locator("div.shadow-context-menu-dropdown")
+      .locator('a[href*="/courses-dlya-detej/direction"]', {
+        hasText: categoryName,
+      })
       .click();
   }
 
