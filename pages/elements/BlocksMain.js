@@ -319,9 +319,9 @@ export class BlocksMain {
       return !classes.includes("swiper-slide-duplicate");
     };
 
-    const cards = this.reviewBlock.locator(
-      'a[href*="education_centers/otzyvy"]',
-    );
+    // const cards = this.reviewBlock.locator(
+    //   'a[href*="education_centers/otzyvy"]',
+    // );
     // const getFirstVisibleHref = async () => {
     //   await cards.first().waitFor({ state: "attached" });
     //   return await cards.first().getAttribute("href");
@@ -363,5 +363,16 @@ export class BlocksMain {
 
     expect(completedFullLoop).toBeTruthy();
     expect(clickCount).toBeGreaterThan(1);
+  }
+
+  // проверка, что кнопка "Посмотреть все отзывы" ведет на витрину отзывов /education_centers/otzyvy
+  async checkViewAllRewies() {
+    const reviwesAllButton = this.reviewBlock.locator(
+      "//a[normalize-space(text())='Посмотреть все отзывы']",
+    );
+    await Promise.all([
+      this.page.waitForURL(/\/otzyvy$/),
+      reviwesAllButton.click(),
+    ]);
   }
 }
