@@ -167,23 +167,28 @@ test.describe("Главная страница образования", () => {
     test("Проверяем, что карусель перелистывания карточек курсов в 'Бесплатных курсах' зациклена", async () => {
       await blocksMain.checkInfiniteScrollFree();
     });
+  });
+  test.describe("Блок 'Отзывы об онлайн-школах'", () => {
+    test("Проверяем, что карусель перелистывания карточек отзывов в блоке Отзывы зацкилена", async () => {
+      await blocksMain.checkInfiniteScrollReview();
+    });
+  });
 
-    test.describe("Другое", () => {
-      test("Проверяем, что баннер ИИ ведет на /courses/analitika/ai", async () => {
-        await mainPage.checkBannerAi();
-      });
+  test.describe("Другое", () => {
+    test("Проверяем, что баннер ИИ ведет на /courses/analitika/ai", async () => {
+      await mainPage.checkBannerAi();
+    });
 
-      test("Проверяем, что при клике на таб 'Детям' урл меняется на /education#school", async () => {
-        await mainPage.checkTabforChildren();
-      });
+    test("Проверяем, что при клике на таб 'Детям' урл меняется на /education#school", async () => {
+      await mainPage.checkTabforChildren();
+    });
 
-      test("Проверяем, что при клике на таб 'промокоды' открывается новая вкладка с промокодами", async () => {
-        await mainPage.checkTabPromocodes();
-      });
+    test("Проверяем, что при клике на таб 'промокоды' открывается новая вкладка с промокодами", async () => {
+      await mainPage.checkTabPromocodes();
+    });
 
-      test("Проверяем, что при клике на Посмотреть все в блоке Детям открывается детская витрина курсов", async () => {
-        await mainPage.assertViewAllCoursesLinkChildren();
-      });
+    test("Проверяем, что при клике на Посмотреть все в блоке Детям открывается детская витрина курсов", async () => {
+      await mainPage.assertViewAllCoursesLinkChildren();
     });
   });
 });

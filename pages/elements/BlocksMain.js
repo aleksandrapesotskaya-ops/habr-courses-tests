@@ -37,6 +37,9 @@ export class BlocksMain {
     this.goToallFreeCourses = this.freeBlock.locator(
       'xpath=.//a[normalize-space()="Перейти ко всем курсам"]',
     );
+    this.reviewBlock = page.locator(
+      '//section[.//h2[normalize-space()="Отзывы об онлайн-школах"]]',
+    );
   }
 
   // проверка, что по клику на "Все" и кнопке "Перейти ко всем курсам"
@@ -110,11 +113,11 @@ export class BlocksMain {
       return !classes.includes("swiper-slide-duplicate");
     };
 
-    const cards = this.popularBlock.locator('a[href*="page=courses"]');
-    const getFirstVisibleHref = async () => {
-      await cards.first().waitFor({ state: "attached" });
-      return await cards.first().getAttribute("href");
-    };
+    // const cards = this.popularBlock.locator('a[href*="page=courses"]');
+    // const getFirstVisibleHref = async () => {
+    //   await cards.first().waitFor({ state: "attached" });
+    //   return await cards.first().getAttribute("href");
+    // };
 
     while (!(await isOriginalSlide())) {
       await nextButton.click();
@@ -256,11 +259,11 @@ export class BlocksMain {
       return !classes.includes("swiper-slide-duplicate");
     };
 
-    const cards = this.freeBlock.locator('a[href*="page=courses"]');
-    const getFirstVisibleHref = async () => {
-      await cards.first().waitFor({ state: "attached" });
-      return await cards.first().getAttribute("href");
-    };
+    // const cards = this.freeBlock.locator('a[href*="page=courses"]');
+    // const getFirstVisibleHref = async () => {
+    //   await cards.first().waitFor({ state: "attached" });
+    //   return await cards.first().getAttribute("href");
+    // };
 
     while (!(await isOriginalSlide())) {
       await nextButton.click();
@@ -284,6 +287,68 @@ export class BlocksMain {
       });
 
       const currentSlide = this.freeBlock.locator(".swiper-slide-active");
+      const currentIndex = await currentSlide.getAttribute(
+        "data-swiper-slide-index",
+      );
+      const isOriginal = !(await currentSlide.getAttribute("class")).includes(
+        "duplicate",
+      );
+
+      if (currentIndex === initialIndex && isOriginal && clickCount > 1) {
+        completedFullLoop = true;
+      }
+    }
+
+    expect(completedFullLoop).toBeTruthy();
+    expect(clickCount).toBeGreaterThan(1);
+  }
+
+  // проверка, что карусель перелистывания карточек курсов в блоке
+  // "Отзывы" бесконечная
+  async checkInfiniteScrollReview() {
+    const nextButton = this.reviewBlock.locator(
+      "button.swiper-button-shadow.absolute.-right-4",
+    );
+    await this.reviewBlock
+      .locator(".swiper-slide-active")
+      .waitFor({ state: "visible" });
+
+    const isOriginalSlide = async () => {
+      const activeSlide = this.freeBlock.locator(".swiper-slide-active");
+      const classes = await activeSlide.getAttribute("class");
+      return !classes.includes("swiper-slide-duplicate");
+    };
+
+    const cards = this.reviewBlock.locator(
+      'a[href*="education_centers/otzyvy"]',
+    );
+    // const getFirstVisibleHref = async () => {
+    //   await cards.first().waitFor({ state: "attached" });
+    //   return await cards.first().getAttribute("href");
+    // };
+
+    while (!(await isOriginalSlide())) {
+      await nextButton.click();
+    }
+
+    const initialIndex = await this.reviewBlock
+      .locator(".swiper-slide-active")
+      .getAttribute("data-swiper-slide-index");
+
+    let clickCount = 0;
+    const maxClicks = 30;
+    let completedFullLoop = false;
+
+    while (clickCount < maxClicks && !completedFullLoop) {
+      await nextButton.click();
+      clickCount++;
+
+      await this.page.waitForFunction(() => {
+        const swiper = document.querySelector(".swiper-container")?.swiper;
+        return swiper ? !swiper.animating : true;
+      });
+
+      const currentSlide = this.reviewBlock.locator(".swiper-slide-active");
       const currentIndex = await currentSlide.getAttribute(
         "data-swiper-slide-index",
       );
