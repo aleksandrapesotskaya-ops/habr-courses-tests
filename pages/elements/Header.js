@@ -32,6 +32,21 @@ export class Header {
     };
   }
 
+  async openCoursesMenu() {
+    await this.clickCoursesDropdownButton();
+    this.coursesDropdown = this.page
+      .locator("div.shadow-context-menu-dropdown")
+      .filter({ hasText: "Взрослым" });
+    await expect(this.coursesDropdown).toBeVisible();
+  }
+
+  async clickCoursesMenuItemChildren(categoryName) {
+    await this.page
+      .locator(`a[href*="/courses-dlya-detej/direction"]`)
+      .filter({ hasText: categoryName })
+      .click();
+  }
+
   async checkNavigationLinks() {
     for (const [name, link] of Object.entries(this.navigationLinks)) {
       await expect
@@ -93,5 +108,25 @@ export class Header {
     ).toBeVisible();
 
     await buttonLocator.click();
+  }
+
+  // проверяю направления курсов для детей в блоке "Все курсы" в хедере
+  async assertNavigationToCourseCategoryChildren() {
+    const categories = [
+      [
+        "Программирование",
+        /\/courses-dlya-detej\/direction\/programmirovanie$/,
+      ],
+      ["Математика", /\/courses-dlya-detej\/direction\/matematika$/],
+      ["Русский язык", /\/courses-dlya-detej\/direction\/russkiy-yazyk$/],
+      ["Информатика", /\/courses-dlya-detej\/direction\/informatika$/],
+      ["Английский язык", /\/courses-dlya-detej\/direction\/angliyskiy-yazyk$/],
+      ["Физика", /\/courses-dlya-detej\/direction\/fizika$/],
+    ];
+    for (const [categoryName, expectedURL] of categories) {
+      await this.openCoursesMenu();
+      await this.clickCoursesMenuItemChildren(categoryName);
+      await expect(this.page).toHaveURL(expectedURL);
+    }
   }
 }

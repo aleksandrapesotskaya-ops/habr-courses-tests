@@ -51,7 +51,7 @@ test.describe("Главная страница образования", () => {
     test("меню Все курсы открывается и закрывается", async () => {
       await mainPage.openCoursesMenu();
       await mainPage.assertCoursesMenuVisible();
-      await mainPage.openCoursesMenu();
+      await mainPage.header.clickCoursesDropdownButton();
       await mainPage.assertCoursesMenuHidden();
     });
 
@@ -80,6 +80,9 @@ test.describe("Главная страница образования", () => {
         await mainPage.assertNavigationToCourseCategory(name, url);
       });
     }
+    test("Проверяем категории направлений курсов для детей из раздела Все курсы", async () => {
+      await mainPage.header.assertNavigationToCourseCategoryChildren();
+    });
   });
 
   // проверяем меню "Школы и Вузы"
@@ -165,7 +168,7 @@ test.describe("Главная страница образования", () => {
       await blocksMain.checkInfiniteScrollFree();
     });
 
-    test.describe("Баннер ИИ, таб 'детям', таб 'промокоды'", () => {
+    test.describe("Другое", () => {
       test("Проверяем, что баннер ИИ ведет на /courses/analitika/ai", async () => {
         await mainPage.checkBannerAi();
       });

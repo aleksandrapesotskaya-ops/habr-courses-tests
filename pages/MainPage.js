@@ -45,6 +45,9 @@ export class MainPage {
   async goto() {
     await this.page.goto("/education");
   }
+  async openCoursesMenu() {
+    await this.header.clickCoursesDropdownButton();
+  }
 
   async assertPageTitle() {
     await expect.soft(this.pageTitle).toBeVisible();
@@ -72,20 +75,16 @@ export class MainPage {
       .not.toHaveAttribute("href");
   }
 
-  async openCoursesMenu() {
-    await this.header.clickCoursesDropdownButton();
+  async assertCoursesMenuHidden() {
+    await expect(
+      this.page.locator("div.shadow-context-menu-dropdown:visible"),
+    ).toHaveCount(0);
   }
 
   async assertCoursesMenuVisible() {
     await expect(
       this.page.locator("div.shadow-context-menu-dropdown:visible"),
     ).toBeVisible();
-  }
-
-  async assertCoursesMenuHidden() {
-    await expect(
-      this.page.locator("div.shadow-context-menu-dropdown:visible"),
-    ).toHaveCount(0);
   }
 
   async clickCoursesMenuItem(menuItemName) {
